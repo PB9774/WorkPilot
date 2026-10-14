@@ -91,6 +91,12 @@ class WorkPilotCoreTests(unittest.TestCase):
         core._record_step(task_id, 2, "inspect_dataset", {"dataset": "invoices"}, {"fields": []})
         self.assertEqual(core._evidence_status(task_id), "completed")
 
+    def test_recovered_unknown_dataset_attempt_can_switch_read_tools(self):
+        task_id = core.create_task("Find the invoice after correcting the dataset")
+        core._record_step(task_id, 1, "search_records", {"dataset": "invoices.csv"}, {"error": "Unknown dataset. Use a table name from the catalog."}, "failed")
+        core._record_step(task_id, 2, "inspect_dataset", {"dataset": "invoices"}, {"fields": []})
+        self.assertEqual(core._evidence_status(task_id), "completed")
+
     def test_unrecovered_failure_keeps_task_partial(self):
         task_id = core.create_task("Report a failed tool")
         core._record_step(task_id, 1, "search_records", {}, {"records": []})
