@@ -1,18 +1,18 @@
 # WorkPilot AI
 
-WorkPilot is a Python/Streamlit proof of concept for retrieving supplied business data, selecting allowlisted tools with a Groq model, persisting execution evidence, and requiring human approval before a local finance-sandbox update.
+WorkPilot is a Python/Streamlit proof of concept for retrieving supplied business data, selecting allowlisted tools with Gemini Flash, persisting execution evidence, and requiring human approval before a local finance-sandbox update.
 
 ## Live Demo
 
 Try the deployed app: [WorkPilot AI on Streamlit](https://workpilotpb.streamlit.app/).
 
-The demo uses fictional synthetic Meridian Forge Corp data. Model-driven tasks require the deployed app to have a valid `GROQ_API_KEY` configured in Streamlit secrets.
+The demo uses fictional synthetic Meridian Forge Corp data. Model-driven tasks require the deployed app to have a valid `GEMINI_API_KEY` configured in Streamlit secrets.
 
 ## Start Here
 
 The workspace already contains a complete evaluation dataset. It is **synthetic** data for fictional Meridian Forge Corp, not real company or public Kaggle data. Its seeded anomalies and expected outcomes are intended for controlled testing. Do not use them as evidence about a real business.
 
-The app can import and inspect data without an API key. A Groq key is required only for model-driven task planning.
+The app can import and inspect data without an API key. A Gemini API key is required only for model-driven task planning.
 
 ## Available Data
 
@@ -35,17 +35,17 @@ The app keeps source tables separate from app state. CSV/JSON imports retain the
 
 ## Repository Map
 
-| Path                                   | Responsibility                                                                                                            |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| `app.py`                               | Streamlit task, data import/catalog, approval, evidence, and history views                                                |
-| `workpilot_core.py`                    | SQLite import/persistence, bounded Groq tool loop, retrieval, approval checks, report verification, and localhost sandbox |
-| `tests/test_workpilot_core.py`         | Offline app tests, including mocked Groq calls and a Playwright sandbox mutation                                          |
-| `workpilot_dataset/workpilot/data/`    | Supplied synthetic evaluation data and its data documentation                                                             |
-| `workpilot_dataset/workpilot/scripts/` | Dataset generator, validator, fixtures, and standalone reference importer                                                 |
-| `workpilot_dataset/workpilot/tests/`   | Dataset integrity and determinism tests                                                                                   |
-| `ARCHITECTURE.md`                      | Runtime, permissions, persistence, and browser boundaries                                                                 |
-| `DATASET_GUIDE.md`                     | Import formats, provenance, and custom-data instructions                                                                  |
-| `.env.example`                         | Supported environment variables; Streamlit does not load it automatically                                                 |
+| Path                                   | Responsibility                                                                                                              |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| `app.py`                               | Streamlit task, data import/catalog, approval, evidence, and history views                                                  |
+| `workpilot_core.py`                    | SQLite import/persistence, bounded Gemini tool loop, retrieval, approval checks, report verification, and localhost sandbox |
+| `tests/test_workpilot_core.py`         | Offline app tests, including mocked Gemini calls and a Playwright sandbox mutation                                          |
+| `workpilot_dataset/workpilot/data/`    | Supplied synthetic evaluation data and its data documentation                                                               |
+| `workpilot_dataset/workpilot/scripts/` | Dataset generator, validator, fixtures, and standalone reference importer                                                   |
+| `workpilot_dataset/workpilot/tests/`   | Dataset integrity and determinism tests                                                                                     |
+| `ARCHITECTURE.md`                      | Runtime, permissions, persistence, and browser boundaries                                                                   |
+| `DATASET_GUIDE.md`                     | Import formats, provenance, and custom-data instructions                                                                    |
+| `.env.example`                         | Supported environment variables; Streamlit does not load it automatically                                                   |
 
 ## Setup
 
@@ -58,16 +58,16 @@ python -m pip install -r requirements.txt
 python -m playwright install chromium
 ```
 
-The runtime uses Streamlit for the UI, Groq's Python SDK for model tool calls, `pypdf` for text-layer PDFs, Playwright/Chromium for the restricted local browser action, and SQLite from the Python standard library. Pytest runs the automated tests.
+The runtime uses Streamlit for the UI, the OpenAI Python SDK with Google's Gemini-compatible endpoint for model tool calls, `pypdf` for text-layer PDFs, Playwright/Chromium for the restricted local browser action, and SQLite from the Python standard library. Pytest runs the automated tests.
 
-To enable model-driven tasks, set your Groq API key in the shell. Never commit it:
+To enable model-driven tasks, create a Gemini API key in [Google AI Studio](https://aistudio.google.com/apikey) and set it in the shell. Never commit it:
 
 ```powershell
-$env:GROQ_API_KEY = "your-key"
-$env:WORKPILOT_MODEL = "openai/gpt-oss-20b"
+$env:GEMINI_API_KEY = "your-key"
+$env:WORKPILOT_MODEL = "gemini-3.8-flash"
 ```
 
-The default model ID is served by Groq; the `openai/` prefix is part of that model ID and does not select OpenAI as the provider. Groq free-tier quotas and available models can change. Check your Groq console if a model is unavailable and set `WORKPILOT_MODEL` to an enabled tool-calling model.
+The app connects to Google's OpenAI-compatible Gemini endpoint. Gemini free-tier model access and rate limits can change; check the current [Gemini API pricing and limits](https://ai.google.dev/gemini-api/docs/pricing) if requests are refused.
 
 ## Run The App
 
@@ -106,7 +106,7 @@ An initial data directory must contain the six named CSVs under `structured/`. `
 
 1. Keep real/private source data outside version control; `.gitignore` excludes local databases, imported-data directories, reports, and secrets.
 2. Put app behavior in `workpilot_core.py` and UI wiring in `app.py`. Keep model-selected actions inside `_tool_schemas()` and explicit backend dispatch; never pass arbitrary SQL, Python, shell, URLs, or JavaScript to the model.
-3. Add deterministic tests under `tests/`. Use temporary SQLite state and mock the Groq client; normal tests must not need credentials or make paid calls.
+3. Add deterministic tests under `tests/`. Use temporary SQLite state and mock the model client; normal tests must not need credentials or make paid calls.
 4. For dataset-generator changes, update `scripts/generate_dataset.py` and validate generated output. The committed dataset README is generator-controlled and its hash is stored in `manifest.json`.
 5. Run the app tests, dataset tests, and dataset validator before submitting changes.
 
@@ -117,7 +117,7 @@ python -m pytest tests workpilot_dataset/workpilot/tests -q
 python workpilot_dataset/workpilot/scripts/validate_dataset.py
 ```
 
-The app tests make no Groq API call. They cover data/document retrieval, schema inspection, upload rejection/idempotency, numeric aggregation, report readback and path confinement, approval enforcement/rejection, mutation idempotency, task persistence, dynamic tool-result feedback, and the actual local Playwright form. The dataset validator independently checks its 98 data/manifest rules.
+The app tests make no Gemini API call. They cover data/document retrieval, schema inspection, upload rejection/idempotency, numeric aggregation, report readback and path confinement, approval enforcement/rejection, mutation idempotency, task persistence, dynamic tool-result feedback, and the actual local Playwright form. The dataset validator independently checks its 98 data/manifest rules.
 
 ## Current Scope
 

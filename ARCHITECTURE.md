@@ -4,7 +4,7 @@
 
 `app.py` is the Streamlit interface. It calls plain service functions in `workpilot_core.py`. SQLite (`sqlite3`) is the single local persistence layer. The in-process importer in `workpilot_core.py` validates and loads the packaged structured tables, internal sandbox snapshot, and document files; it does not execute code found beside the selected data directory.
 
-The model adapter is the official Groq Python SDK using Groq Chat Completions function calling. `GROQ_API_KEY` is optional for import, browsing the catalog, and tests. Without it, the task-run button is disabled and the service fails closed if called directly. The default model is `openai/gpt-oss-20b`, configurable as `WORKPILOT_MODEL`. This model ID is served by Groq; Groq's free-tier quota and available model catalog are controlled by Groq and can change.
+The model adapter uses the OpenAI Python SDK with Google's OpenAI-compatible Gemini endpoint and function calling. `GEMINI_API_KEY` is optional for import, browsing the catalog, and tests. Without it, the task-run button is disabled and the service fails closed if called directly. The default model is `gemini-3.8-flash`, configurable as `WORKPILOT_MODEL`. Gemini free-tier quotas and model availability are controlled by Google and can change.
 
 ## Execution Loop
 

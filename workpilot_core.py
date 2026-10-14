@@ -258,13 +258,13 @@ def _now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
-def get_groq_api_key() -> str | None:
-    key = os.getenv("GROQ_API_KEY")
+def get_gemini_api_key() -> str | None:
+    key = os.getenv("GEMINI_API_KEY")
     if key:
         return key
     try:
         import streamlit as st
-        return st.secrets.get("GROQ_API_KEY")
+        return st.secrets.get("GEMINI_API_KEY")
     except Exception:
         return None
 
@@ -510,11 +510,11 @@ def _ensure_sandbox_server() -> None:
 
 
 def run_task(task_id: str, api_key: str | None = None, model: str | None = None) -> dict[str, Any]:
-    """Run one bounded Groq tool-calling sequence; fail closed without credentials."""
-    api_key = api_key or get_groq_api_key()
-    model = model or os.getenv("WORKPILOT_MODEL", "openai/gpt-oss-20b")
+    """Run one bounded Gemini tool-calling sequence; fail closed without credentials."""
+    api_key = api_key or get_gemini_api_key()
+    model = model or os.getenv("WORKPILOT_MODEL", "gemini-3.8-flash")
     if not api_key:
-        return _finish(task_id, "failed", "No model API key configured. Set GROQ_API_KEY to enable model-driven task execution.")
+        return _finish(task_id, "failed", "No model API key configured. Set GEMINI_API_KEY to enable model-driven task execution.")
     with connect() as db:
         task = db.execute("SELECT * FROM tasks WHERE task_id=?", (task_id,)).fetchone()
     if not task:
@@ -535,10 +535,15 @@ def run_task(task_id: str, api_key: str | None = None, model: str | None = None)
             {"role": "user", "content": task["request"]},
         ]
     try:
-        from groq import Groq
+        from openai import OpenAI
     except ImportError:
-        return _finish(task_id, "failed", "Groq SDK is not installed. Install dependencies from requirements.txt.")
-    client = Groq(api_key=api_key, timeout=25, max_retries=1)
+        return _finish(task_id, "failed", "OpenAI SDK is not installed. Install dependencies from requirements.txt.")
+    client = OpenAI(
+        api_key=api_key,
+        base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+        timeout=25,
+        max_retries=1,
+    )
     step_index = len(task_steps(task_id))
     task_started = datetime.fromisoformat(task["created_at"])
     if task_started.tzinfo is None:

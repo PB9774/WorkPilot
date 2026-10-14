@@ -53,14 +53,14 @@ class WorkPilotCoreTests(unittest.TestCase):
         self.assertIn("[REDACTED_EMAIL]", value)
         self.assertIn("[REDACTED_TAX_ID]", value)
 
-    def test_groq_key_uses_environment_then_streamlit_secret(self):
+    def test_gemini_key_uses_environment_then_streamlit_secret(self):
         fake_streamlit = types.ModuleType("streamlit")
-        fake_streamlit.secrets = {"GROQ_API_KEY": "cloud-test-key"}
+        fake_streamlit.secrets = {"GEMINI_API_KEY": "cloud-test-key"}
         with patch.dict(sys.modules, {"streamlit": fake_streamlit}):
             with patch.dict("os.environ", {}, clear=True):
-                self.assertEqual(core.get_groq_api_key(), "cloud-test-key")
-            with patch.dict("os.environ", {"GROQ_API_KEY": "shell-test-key"}):
-                self.assertEqual(core.get_groq_api_key(), "shell-test-key")
+                self.assertEqual(core.get_gemini_api_key(), "cloud-test-key")
+            with patch.dict("os.environ", {"GEMINI_API_KEY": "shell-test-key"}):
+                self.assertEqual(core.get_gemini_api_key(), "shell-test-key")
 
     def test_user_csv_import_and_malformed_json(self):
         imported = core.import_upload("regional_sales.csv", b"region,revenue\nNorth,120\nSouth,80\n")
@@ -173,10 +173,10 @@ class WorkPilotCoreTests(unittest.TestCase):
                 observed_messages.append(kwargs["messages"])
                 return responses.pop(0)
 
-        fake_groq = types.ModuleType("groq")
-        fake_groq.Groq = lambda **kwargs: SimpleNamespace(chat=SimpleNamespace(completions=FakeCompletions()))
+        fake_openai = types.ModuleType("openai")
+        fake_openai.OpenAI = lambda **kwargs: SimpleNamespace(chat=SimpleNamespace(completions=FakeCompletions()))
         task_id = core.create_task("Find invoice INV-0101")
-        with patch.dict(sys.modules, {"groq": fake_groq}):
+        with patch.dict(sys.modules, {"openai": fake_openai}):
             result = core.run_task(task_id, api_key="test-key", model="test-model")
         self.assertEqual(result["status"], "completed")
         self.assertEqual(len(observed_messages), 2)

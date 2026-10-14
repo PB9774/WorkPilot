@@ -23,9 +23,9 @@ with st.sidebar:
     st.subheader("Runtime")
     st.metric("Datasets", len(catalog))
     st.metric("Structured rows", sum(catalog.values()))
-    st.caption(f"Groq model: {os.getenv('WORKPILOT_MODEL', 'openai/gpt-oss-20b')}")
-    if not core.get_groq_api_key():
-        st.warning("Task planning needs GROQ_API_KEY. Dataset import, inspection, and tests work offline.")
+    st.caption(f"Gemini model: {os.getenv('WORKPILOT_MODEL', 'gemini-3.8-flash')}")
+    if not core.get_gemini_api_key():
+        st.warning("Task planning needs GEMINI_API_KEY. Dataset import, inspection, and tests work offline.")
 
 tasks_tab, data_tab, history_tab = st.tabs(["Tasks", "Data", "History"])
 
@@ -33,7 +33,7 @@ with tasks_tab:
     st.subheader("New task")
     with st.form("new_task", clear_on_submit=True):
         request = st.text_area("Business objective", height=100, placeholder="Find invoices for a vendor and compare their statuses with the finance sandbox.")
-        submitted = st.form_submit_button("Run task", type="primary", disabled=not core.get_groq_api_key())
+        submitted = st.form_submit_button("Run task", type="primary", disabled=not core.get_gemini_api_key())
     if submitted and request.strip():
         task_id = core.create_task(request.strip())
         core.run_task(task_id)
