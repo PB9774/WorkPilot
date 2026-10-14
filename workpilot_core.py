@@ -562,9 +562,19 @@ def run_task(task_id: str, api_key: str | None = None, model: str | None = None)
             status = "partially_completed" if any(step["status"] == "executed" for step in task_steps(task_id)) else "failed"
             return _finish(task_id, status, "The model request failed; no success was inferred.", messages)
         choice = response.choices[0].message
-        assistant_message: dict[str, Any] = {"role": "assistant", "content": choice.content or ""}
+        assistant_message = choice.model_dump(exclude_none=True) if hasattr(choice, "model_dump") else {}
+        assistant_message["role"] = "assistant"
+        assistant_message["content"] = choice.content or ""
         if choice.tool_calls:
-            assistant_message["tool_calls"] = [{"id": call.id, "type": "function", "function": {"name": call.function.name, "arguments": call.function.arguments}} for call in choice.tool_calls]
+            assistant_message["tool_calls"] = [
+                call.model_dump(exclude_none=True) if hasattr(call, "model_dump") else {
+                    "id": call.id,
+                    "type": "function",
+                    "function": {"name": call.function.name, "arguments": call.function.arguments},
+                    **({"extra_content": call.extra_content} if getattr(call, "extra_content", None) is not None else {}),
+                }
+                for call in choice.tool_calls
+            ]
         messages.append(assistant_message)
         if not choice.tool_calls:
             return _finish(task_id, _evidence_status(task_id), choice.content or "The model returned no summary.", messages)

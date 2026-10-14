@@ -7,6 +7,8 @@ from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import patch
 
+from openai.types.chat import ChatCompletionMessageToolCall
+
 import workpilot_core as core
 
 
@@ -158,10 +160,15 @@ class WorkPilotCoreTests(unittest.TestCase):
         self.assertEqual(core._execute_read_tool("get_task_status", {"task_id": task_id})["status"], "pending")
 
     def test_model_selects_tool_and_receives_its_actual_result(self):
-        call = SimpleNamespace(id="call-1", function=SimpleNamespace(
-            name="search_records",
-            arguments=json.dumps({"dataset": "invoices", "field": "invoice_id", "value": "INV-0101"}),
-        ))
+        call = ChatCompletionMessageToolCall.model_validate({
+            "id": "call-1",
+            "type": "function",
+            "function": {
+                "name": "search_records",
+                "arguments": json.dumps({"dataset": "invoices", "field": "invoice_id", "value": "INV-0101"}),
+            },
+            "extra_content": {"google": {"thought_signature": "test-signature"}},
+        })
         responses = [
             SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(content=None, tool_calls=[call]))]),
             SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(content="Found INV-0101 in invoices.csv.", tool_calls=None))]),
@@ -182,6 +189,8 @@ class WorkPilotCoreTests(unittest.TestCase):
         self.assertEqual(len(observed_messages), 2)
         tool_results = [message for message in observed_messages[1] if message["role"] == "tool"]
         self.assertIn("INV-0101", tool_results[0]["content"])
+        assistant_call = next(message for message in observed_messages[1] if message["role"] == "assistant")
+        self.assertEqual(assistant_call["tool_calls"][0]["extra_content"]["google"]["thought_signature"], "test-signature")
         self.assertEqual(core.task_steps(task_id)[0]["tool_name"], "search_records")
 
 
