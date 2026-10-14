@@ -2,6 +2,12 @@
 
 WorkPilot is a Python/Streamlit proof of concept for retrieving supplied business data, selecting allowlisted tools with a Groq model, persisting execution evidence, and requiring human approval before a local finance-sandbox update.
 
+## Live Demo
+
+Try the deployed app: [WorkPilot AI on Streamlit](https://workpilotpb.streamlit.app/).
+
+The demo uses fictional synthetic Meridian Forge Corp data. Model-driven tasks require the deployed app to have a valid `GROQ_API_KEY` configured in Streamlit secrets.
+
 ## Start Here
 
 The workspace already contains a complete evaluation dataset. It is **synthetic** data for fictional Meridian Forge Corp, not real company or public Kaggle data. Its seeded anomalies and expected outcomes are intended for controlled testing. Do not use them as evidence about a real business.
@@ -72,6 +78,17 @@ streamlit run app.py --server.address 127.0.0.1
 ```
 
 Open `http://127.0.0.1:8501`. In **Data**, inspect the bundled catalog or upload multiple CSV/JSON/PDF/TXT/Markdown files. In **Tasks**, submit an objective and review persisted tool evidence. Mutations pause for exact-action approval and are restricted to the local sandbox invoice-status form.
+
+### Example Prompts
+
+In the **Tasks** tab, try prompts such as:
+
+- `Find the latest Redwood IT Hardware invoice and report its invoice number, amount, and status.`
+- `Search the invoice processing policy for duplicate-invoice checks and summarize the relevant guidance.`
+- `Compare invoice INV-0132 in the source data with the finance sandbox and report any status mismatch.`
+- `Calculate the total invoice amount grouped by currency.`
+
+These examples use the bundled synthetic dataset and the app's current read and analysis tools. Results are recorded in the execution evidence and task history.
 
 Optional paths and limits can be set before launch:
 
