@@ -76,6 +76,18 @@ class WorkPilotCoreTests(unittest.TestCase):
         core._record_step(task_id, 1, "compare_groups", {}, metrics)
         self.assertEqual(core._evidence_status(task_id), "completed")
 
+    def test_recovered_unknown_dataset_attempt_does_not_keep_task_partial(self):
+        task_id = core.create_task("Retry with the correct table")
+        core._record_step(task_id, 1, "inspect_dataset", {"dataset": "invoices.csv"}, {"error": "Unknown dataset. Use a table name from the catalog."}, "failed")
+        core._record_step(task_id, 2, "inspect_dataset", {"dataset": "invoices"}, {"fields": []})
+        self.assertEqual(core._evidence_status(task_id), "completed")
+
+    def test_unrecovered_failure_keeps_task_partial(self):
+        task_id = core.create_task("Report a failed tool")
+        core._record_step(task_id, 1, "search_records", {}, {"records": []})
+        core._record_step(task_id, 2, "read_document", {}, {"error": "Document source not found."}, "failed")
+        self.assertEqual(core._evidence_status(task_id), "partially_completed")
+
     def test_report_saving_is_confined_and_verified(self):
         result = core._save_report({"filename": "summary.md", "content": "# Verified\n"})
         self.assertTrue(result["verified"])
