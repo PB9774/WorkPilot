@@ -1,0 +1,31 @@
+Apex Office Supplies Ltd
+1200 Commerce Way,  Columbus, OH 43004, US (FICTIONAL)
+Tel: +1-555-0101   Email: ar@apexofficesuppliesltd.example
+Tax ID (SYNTHETIC): SYN-EIN-00000001
+
+                              INVOICE
+
+Invoice No:     APE-2607-0016
+Invoice Date:   18 July 2026
+Due Date:       17 August 2026
+PO Reference:   PO-2026-0013
+Currency:       USD
+Payment Terms:  Net 30
+
+Bill To:
+  Meridian Forge Corp (SYNTHETIC COMPANY)
+  Accounts Payable, 500 Foundry Lane, Northfield, MN 55057 (FICTIONAL)
+  ap@meridianforge.example
+
+Description                             Qty       Unit Price            Amount
+------------------------------------------------------------------------------
+Printer paper A4 (case of 10 reams)      50           $43.26         $2,163.00
+Toner cartridge, high yield              18          $121.54         $2,187.72
+------------------------------------------------------------------------------
+                                                   Subtotal:         $4,350.72
+                                                   Tax (8%):           $348.06
+                                                  TOTAL DUE:         $4,698.78
+
+Remittance: via vendor portal (no banking details on this synthetic document).
+
+*** SYNTHETIC DOCUMENT - FICTIONAL DATA - DOC-INV-0016 ***

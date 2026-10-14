@@ -1,0 +1,13 @@
+SUPPLY AGREEMENT - IT HARDWARE
+Contract ID: CON-001
+Effective date: 2026-01-01
+Parties: Meridian Forge Corp (SYNTHETIC) and Redwood IT Hardware Inc (VND-021)
+Vendor tax ID (SYNTHETIC): SYN-EIN-00000021
+
+1. Scope: supply of laptops, monitors and docking stations.
+2. Payment terms: Net 30 days from invoice date.
+3. Price schedule (USD, excl. tax): Business laptop 14in 1,380.00; 27in monitor 340.00; Docking station 185.00.
+4. Every invoice must quote a valid purchase order number issued by the Buyer.
+5. Termination: 60 days written notice.
+
+[SYNTHETIC CONTRACT - FICTIONAL DATA - NOT LEGALLY BINDING]

@@ -1,0 +1,29 @@
+Quartz Maintenance Co
+77 Foundry Park,  Toledo, OH 43604, US (FICTIONAL)
+Tel: +1-555-0120   Email: ar@quartzmaintenanceco.example
+Tax ID (SYNTHETIC): SYN-EIN-00000020
+
+                              INVOICE
+
+Invoice No:     QUA-2601-0064
+Invoice Date:   25 January 2026
+Due Date:       24 February 2026
+Currency:       USD
+Payment Terms:  Net 30
+
+Bill To:
+  Meridian Forge Corp (SYNTHETIC COMPANY)
+  Accounts Payable, 500 Foundry Lane, Northfield, MN 55057 (FICTIONAL)
+  ap@meridianforge.example
+
+Description                             Qty       Unit Price            Amount
+------------------------------------------------------------------------------
+Replacement parts kit                     1          $364.80           $364.80
+------------------------------------------------------------------------------
+                                                   Subtotal:           $364.80
+                                                   Tax (8%):            $29.18
+                                                  TOTAL DUE:           $393.98
+
+Remittance: via vendor portal (no banking details on this synthetic document).
+
+*** SYNTHETIC DOCUMENT - FICTIONAL DATA - DOC-INV-0064 ***

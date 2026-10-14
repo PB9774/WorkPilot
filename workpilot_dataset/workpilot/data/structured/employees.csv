@@ -1,0 +1,22 @@
+employee_id,first_name,last_name,department_id,job_title,email,manager_id,role,approval_limit_usd,can_approve_invoices,can_authorize_payments,status,hire_date
+EMP-001,Elena,Voss,DEP-001,Chief Financial Officer,elena.voss@meridianforge.example,,cfo,1000000,true,true,active,2018-01-15
+EMP-002,Daniel,Okafor,DEP-001,Finance Manager,daniel.okafor@meridianforge.example,EMP-001,finance_manager,50000,true,true,active,2018-04-22
+EMP-003,Sofia,Marlowe,DEP-001,Accounts Payable Clerk,sofia.marlowe@meridianforge.example,EMP-002,finance_clerk,0,false,false,active,2018-07-28
+EMP-004,Hiro,Tanabe,DEP-001,Accounts Payable Clerk,hiro.tanabe@meridianforge.example,EMP-002,finance_clerk,0,false,false,active,2018-11-02
+EMP-005,Grace,Lindqvist,DEP-002,Director of Engineering,grace.lindqvist@meridianforge.example,EMP-001,director,10000,true,false,active,2019-02-07
+EMP-006,Rahul,Mehta,DEP-002,Engineering Manager,rahul.mehta@meridianforge.example,EMP-005,manager,2500,true,false,active,2019-05-15
+EMP-007,Chloe,Bennett,DEP-002,Software Engineer,chloe.bennett@meridianforge.example,EMP-006,employee,0,false,false,active,2019-08-20
+EMP-008,Omar,Haddad,DEP-003,Director of Operations,omar.haddad@meridianforge.example,EMP-001,director,10000,true,false,active,2019-11-25
+EMP-009,Lena,Fischer,DEP-003,Operations Manager,lena.fischer@meridianforge.example,EMP-008,manager,2500,true,false,active,2020-03-01
+EMP-010,Tomas,Novak,DEP-003,Logistics Coordinator,tomas.novak@meridianforge.example,EMP-009,employee,0,false,false,active,2020-06-06
+EMP-011,Isabel,Cortez,DEP-004,Marketing Director,isabel.cortez@meridianforge.example,EMP-001,director,10000,true,false,active,2020-09-11
+EMP-012,Jamal,Pierce,DEP-004,Marketing Manager,jamal.pierce@meridianforge.example,EMP-011,manager,2500,true,false,active,2020-12-17
+EMP-013,Yuki,Sato,DEP-004,Campaign Specialist,yuki.sato@meridianforge.example,EMP-012,employee,0,false,false,active,2021-03-24
+EMP-014,Naomi,Brooks,DEP-005,HR Director,naomi.brooks@meridianforge.example,EMP-001,director,10000,true,false,active,2021-06-29
+EMP-015,Victor,Alvarez,DEP-005,HR Manager,victor.alvarez@meridianforge.example,EMP-014,manager,2500,true,false,on_leave,2021-10-04
+EMP-016,Anika,Rao,DEP-006,IT Director,anika.rao@meridianforge.example,EMP-001,director,10000,true,false,active,2022-01-09
+EMP-017,Ben,Carter,DEP-006,IT Manager,ben.carter@meridianforge.example,EMP-016,manager,2500,true,false,active,2022-04-16
+EMP-018,Mia,Johansson,DEP-006,Systems Administrator,mia.johansson@meridianforge.example,EMP-017,employee,0,false,false,active,2022-07-22
+EMP-019,Paula,Reyes,DEP-007,Procurement Officer,paula.reyes@meridianforge.example,EMP-021,procurement_officer,0,false,false,active,2022-10-27
+EMP-020,Gregory,Hale,DEP-004,Former Marketing Manager,gregory.hale@meridianforge.example,EMP-011,manager,2500,true,false,terminated,2023-02-01
+EMP-021,Nadia,Petrov,DEP-007,Procurement Manager,nadia.petrov@meridianforge.example,EMP-001,manager,2500,true,false,active,2023-05-09

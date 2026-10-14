@@ -1,0 +1,5078 @@
+{
+  "metadata": {
+    "system_name": "Meridian Forge Corp Finance Sandbox (SYNTHETIC)",
+    "schema_version": "1.0",
+    "as_of": "2026-10-01",
+    "synthetic": true,
+    "next_record_seq": 96,
+    "notes": "Simulated finance/ERP state. All approvals and payments are simulated. Import is idempotent on idempotency_key."
+  },
+  "vendors": [
+    {
+      "vendor_id": "VND-001",
+      "name": "Apex Office Supplies Ltd",
+      "status": "active",
+      "payment_terms": "Net 30",
+      "currency": "USD",
+      "country": "US"
+    },
+    {
+      "vendor_id": "VND-002",
+      "name": "Apex Office Supply Ltd.",
+      "status": "pending",
+      "payment_terms": "Net 30",
+      "currency": "USD",
+      "country": "US"
+    },
+    {
+      "vendor_id": "VND-003",
+      "name": "Brightwave Consulting LLC",
+      "status": "active",
+      "payment_terms": "Net 30",
+      "currency": "USD",
+      "country": "US"
+    },
+    {
+      "vendor_id": "VND-004",
+      "name": "Bright Wave Consulting Inc",
+      "status": "active",
+      "payment_terms": "Net 45",
+      "currency": "USD",
+      "country": "US"
+    },
+    {
+      "vendor_id": "VND-005",
+      "name": "Cobalt Logistics GmbH",
+      "status": "active",
+      "payment_terms": "Net 30",
+      "currency": "EUR",
+      "country": "DE"
+    },
+    {
+      "vendor_id": "VND-006",
+      "name": "Cobalt Logistik GmbH",
+      "status": "suspended",
+      "payment_terms": "Net 30",
+      "currency": "EUR",
+      "country": "DE"
+    },
+    {
+      "vendor_id": "VND-007",
+      "name": "Delta Print & Packaging Co",
+      "status": "active",
+      "payment_terms": "Net 30",
+      "currency": "USD",
+      "country": "US"
+    },
+    {
+      "vendor_id": "VND-008",
+      "name": "Evergreen Facilities Services",
+      "status": "active",
+      "payment_terms": "Net 30",
+      "currency": "CAD",
+      "country": "CA"
+    },
+    {
+      "vendor_id": "VND-009",
+      "name": "Fenwick Cloud Hosting Ltd",
+      "status": "active",
+      "payment_terms": "Net 30",
+      "currency": "GBP",
+      "country": "GB"
+    },
+    {
+      "vendor_id": "VND-010",
+      "name": "Granite Peak Security LLC",
+      "status": "active",
+      "payment_terms": "Net 30",
+      "currency": "USD",
+      "country": "US"
+    },
+    {
+      "vendor_id": "VND-011",
+      "name": "Harborline Travel Group",
+      "status": "active",
+      "payment_terms": "Net 30",
+      "currency": "GBP",
+      "country": "GB"
+    },
+    {
+      "vendor_id": "VND-012",
+      "name": "Indigo Analytics Pvt Ltd",
+      "status": "active",
+      "payment_terms": "Net 45",
+      "currency": "INR",
+      "country": "IN"
+    },
+    {
+      "vendor_id": "VND-013",
+      "name": "Juniper Staffing Solutions",
+      "status": "pending",
+      "payment_terms": "Net 30",
+      "currency": "USD",
+      "country": "US"
+    },
+    {
+      "vendor_id": "VND-014",
+      "name": "Keystone Equipment Leasing",
+      "status": "active",
+      "payment_terms": "Net 45",
+      "currency": "USD",
+      "country": "US"
+    },
+    {
+      "vendor_id": "VND-015",
+      "name": "Lumen Telecom Services",
+      "status": "active",
+      "payment_terms": "Net 30",
+      "currency": "CAD",
+      "country": "CA"
+    },
+    {
+      "vendor_id": "VND-016",
+      "name": "Maple & Pine Catering",
+      "status": "active",
+      "payment_terms": "Net 15",
+      "currency": "CAD",
+      "country": "CA"
+    },
+    {
+      "vendor_id": "VND-017",
+      "name": "Nimbus Software Licensing GmbH",
+      "status": "active",
+      "payment_terms": "Net 30",
+      "currency": "EUR",
+      "country": "DE"
+    },
+    {
+      "vendor_id": "VND-018",
+      "name": "Orchid Marketing Studio",
+      "status": "active",
+      "payment_terms": "Net 30",
+      "currency": "GBP",
+      "country": "GB"
+    },
+    {
+      "vendor_id": "VND-019",
+      "name": "Pinnacle Legal Advisors LLP",
+      "status": "active",
+      "payment_terms": "Net 30",
+      "currency": "GBP",
+      "country": "GB"
+    },
+    {
+      "vendor_id": "VND-020",
+      "name": "Quartz Maintenance Co",
+      "status": "suspended",
+      "payment_terms": "Net 30",
+      "currency": "USD",
+      "country": "US"
+    },
+    {
+      "vendor_id": "VND-021",
+      "name": "Redwood IT Hardware Inc",
+      "status": "active",
+      "payment_terms": "Net 30",
+      "currency": "USD",
+      "country": "US"
+    },
+    {
+      "vendor_id": "VND-022",
+      "name": "Sterling Courier Services Ltd",
+      "status": "active",
+      "payment_terms": "Net 15",
+      "currency": "GBP",
+      "country": "GB"
+    },
+    {
+      "vendor_id": "VND-023",
+      "name": "Tandem Training Institute",
+      "status": "pending",
+      "payment_terms": "Net 30",
+      "currency": "USD",
+      "country": "US"
+    },
+    {
+      "vendor_id": "VND-024",
+      "name": "Umbra Cleaning Services",
+      "status": "active",
+      "payment_terms": "Net 30",
+      "currency": "USD",
+      "country": "US"
+    },
+    {
+      "vendor_id": "VND-025",
+      "name": "Vantage Data Centers India Pvt Ltd",
+      "status": "suspended",
+      "payment_terms": "Net 60",
+      "currency": "INR",
+      "country": "IN"
+    },
+    {
+      "vendor_id": "VND-026",
+      "name": "Willow Creek Printing",
+      "status": "pending",
+      "payment_terms": "Net 30",
+      "currency": "CAD",
+      "country": "CA"
+    }
+  ],
+  "invoices": [
+    {
+      "record_id": "ERP-INV-000001",
+      "invoice_id": "INV-0001",
+      "vendor_id": "VND-010",
+      "invoice_number": "GRA-2606-0001",
+      "invoice_date": "2026-06-06",
+      "due_date": "2026-07-06",
+      "currency": "USD",
+      "subtotal": 2566.8,
+      "tax_amount": 205.34,
+      "total_amount": 2772.14,
+      "po_number": "PO-2026-0001",
+      "department_id": "DEP-003",
+      "status": "paid",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-06-09T23:47:21Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000001",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-07-02T23:47:21Z",
+        "reference": "SIM-REF-000001"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-06-07T16:47:21Z",
+      "source": "erp_feed",
+      "idempotency_key": "e9579c4aec20c2dd"
+    },
+    {
+      "record_id": "ERP-INV-000002",
+      "invoice_id": "INV-0002",
+      "vendor_id": "VND-010",
+      "invoice_number": "GRA-2607-0002",
+      "invoice_date": "2026-07-02",
+      "due_date": "2026-08-01",
+      "currency": "USD",
+      "subtotal": 2566.8,
+      "tax_amount": 205.34,
+      "total_amount": 2772.14,
+      "po_number": "PO-2026-0001",
+      "department_id": "DEP-003",
+      "status": "paid",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-07-05T14:54:05Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000002",
+        "authorized_by": "EMP-001",
+        "paid_at": "2026-07-16T14:54:05Z",
+        "reference": "SIM-REF-000002"
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-07-04T12:54:05Z",
+      "source": "erp_feed",
+      "idempotency_key": "3b1b1077f7b78351"
+    },
+    {
+      "record_id": "ERP-INV-000003",
+      "invoice_id": "INV-0003",
+      "vendor_id": "VND-003",
+      "invoice_number": "BRI-2608-0003",
+      "invoice_date": "2026-08-17",
+      "due_date": "2026-09-16",
+      "currency": "USD",
+      "subtotal": 3103.65,
+      "tax_amount": 248.29,
+      "total_amount": 3351.94,
+      "po_number": "PO-2026-0002",
+      "department_id": "DEP-002",
+      "status": "overdue",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "approved",
+        "approver_id": "EMP-005",
+        "decided_at": "2026-08-24T12:38:30Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-08-19T11:38:30Z",
+      "source": "erp_feed",
+      "idempotency_key": "3c1b65c55c9e9f9a"
+    },
+    {
+      "record_id": "ERP-INV-000004",
+      "invoice_id": "INV-0005",
+      "vendor_id": "VND-017",
+      "invoice_number": "NIM-2609-0005",
+      "invoice_date": "2026-09-12",
+      "due_date": "2026-10-12",
+      "currency": "EUR",
+      "subtotal": 4377.51,
+      "tax_amount": 831.73,
+      "total_amount": 5209.24,
+      "po_number": "PO-2026-0004",
+      "department_id": "DEP-006",
+      "status": "pending_approval",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "pending",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-09-12T09:22:08Z",
+      "source": "erp_feed",
+      "idempotency_key": "387b7a9267f0098a"
+    },
+    {
+      "record_id": "ERP-INV-000005",
+      "invoice_id": "INV-0006",
+      "vendor_id": "VND-014",
+      "invoice_number": "KEY-2609-0006",
+      "invoice_date": "2026-09-08",
+      "due_date": "2026-10-23",
+      "currency": "USD",
+      "subtotal": 21669.0,
+      "tax_amount": 1733.52,
+      "total_amount": 23402.52,
+      "po_number": "PO-2026-0005",
+      "department_id": "DEP-003",
+      "status": "pending_approval",
+      "approval": {
+        "required_tier": 3,
+        "required_role": "finance_manager",
+        "status": "pending",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-09-10T08:43:43Z",
+      "source": "erp_feed",
+      "idempotency_key": "50999def467c6897"
+    },
+    {
+      "record_id": "ERP-INV-000006",
+      "invoice_id": "INV-0007",
+      "vendor_id": "VND-015",
+      "invoice_number": "LUM-2603-0007",
+      "invoice_date": "2026-03-08",
+      "due_date": "2026-04-07",
+      "currency": "CAD",
+      "subtotal": 19797.4,
+      "tax_amount": 2573.66,
+      "total_amount": 22371.06,
+      "po_number": "PO-2026-0006",
+      "department_id": "DEP-006",
+      "status": "paid",
+      "approval": {
+        "required_tier": 3,
+        "required_role": "finance_manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-03-13T14:00:35Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000006",
+        "authorized_by": "EMP-001",
+        "paid_at": "2026-03-17T14:00:35Z",
+        "reference": "SIM-REF-000006"
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-03-10T10:00:35Z",
+      "source": "erp_feed",
+      "idempotency_key": "925109bf3598d53a"
+    },
+    {
+      "record_id": "ERP-INV-000007",
+      "invoice_id": "INV-0008",
+      "vendor_id": "VND-024",
+      "invoice_number": "UMB-2605-0008",
+      "invoice_date": "2026-05-22",
+      "due_date": "2026-06-21",
+      "currency": "USD",
+      "subtotal": 6762.0,
+      "tax_amount": 540.96,
+      "total_amount": 7302.96,
+      "po_number": "PO-2026-0007",
+      "department_id": "DEP-003",
+      "status": "paid",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "approved",
+        "approver_id": "EMP-008",
+        "decided_at": "2026-05-27T22:32:35Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000007",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-06-21T22:32:35Z",
+        "reference": "SIM-REF-000007"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-05-22T14:32:35Z",
+      "source": "erp_feed",
+      "idempotency_key": "e16d75d1fd9d2f1c"
+    },
+    {
+      "record_id": "ERP-INV-000008",
+      "invoice_id": "INV-0009",
+      "vendor_id": "VND-014",
+      "invoice_number": "KEY-2605-0009",
+      "invoice_date": "2026-05-02",
+      "due_date": "2026-06-16",
+      "currency": "USD",
+      "subtotal": 10260.0,
+      "tax_amount": 820.8,
+      "total_amount": 11080.8,
+      "po_number": "PO-2026-0008",
+      "department_id": "DEP-003",
+      "status": "paid",
+      "approval": {
+        "required_tier": 3,
+        "required_role": "finance_manager",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-05-07T16:37:49Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000008",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-05-26T16:37:49Z",
+        "reference": "SIM-REF-000008"
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-05-02T10:37:49Z",
+      "source": "erp_feed",
+      "idempotency_key": "2c83e80ee73d2473"
+    },
+    {
+      "record_id": "ERP-INV-000009",
+      "invoice_id": "INV-0010",
+      "vendor_id": "VND-014",
+      "invoice_number": "KEY-2606-0010",
+      "invoice_date": "2026-06-28",
+      "due_date": "2026-08-12",
+      "currency": "USD",
+      "subtotal": 3496.0,
+      "tax_amount": 279.68,
+      "total_amount": 3775.68,
+      "po_number": "PO-2026-0008",
+      "department_id": "DEP-003",
+      "status": "disputed",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "on_hold",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-06-29T17:53:41Z",
+      "source": "erp_feed",
+      "idempotency_key": "4b6a0efb81a53703"
+    },
+    {
+      "record_id": "ERP-INV-000010",
+      "invoice_id": "INV-0012",
+      "vendor_id": "VND-024",
+      "invoice_number": "UMB-2603-0012",
+      "invoice_date": "2026-03-05",
+      "due_date": "2026-04-04",
+      "currency": "USD",
+      "subtotal": 13774.0,
+      "tax_amount": 1101.92,
+      "total_amount": 14875.92,
+      "po_number": "PO-2026-0010",
+      "department_id": "DEP-003",
+      "status": "paid",
+      "approval": {
+        "required_tier": 3,
+        "required_role": "finance_manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-03-13T15:29:16Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000010",
+        "authorized_by": "EMP-001",
+        "paid_at": "2026-03-17T15:29:16Z",
+        "reference": "SIM-REF-000010"
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-03-07T10:29:16Z",
+      "source": "erp_feed",
+      "idempotency_key": "b653bf4b928d72dd"
+    },
+    {
+      "record_id": "ERP-INV-000011",
+      "invoice_id": "INV-0013",
+      "vendor_id": "VND-019",
+      "invoice_number": "PIN-2608-0013",
+      "invoice_date": "2026-08-21",
+      "due_date": "2026-09-20",
+      "currency": "GBP",
+      "subtotal": 6102.25,
+      "tax_amount": 1220.45,
+      "total_amount": 7322.7,
+      "po_number": "PO-2026-0011",
+      "department_id": "DEP-001",
+      "status": "overdue",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-08-24T20:30:07Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-08-22T15:30:07Z",
+      "source": "erp_feed",
+      "idempotency_key": "5b2e9d7e85188db0"
+    },
+    {
+      "record_id": "ERP-INV-000012",
+      "invoice_id": "INV-0014",
+      "vendor_id": "VND-019",
+      "invoice_number": "PIN-2608-0014",
+      "invoice_date": "2026-08-06",
+      "due_date": "2026-09-05",
+      "currency": "GBP",
+      "subtotal": 1724.1,
+      "tax_amount": 344.82,
+      "total_amount": 2068.92,
+      "po_number": "PO-2026-0012",
+      "department_id": "DEP-001",
+      "status": "overdue",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-08-13T18:37:56Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-08-07T11:37:56Z",
+      "source": "erp_feed",
+      "idempotency_key": "bc3f4fe81ecd04cd"
+    },
+    {
+      "record_id": "ERP-INV-000013",
+      "invoice_id": "INV-0015",
+      "vendor_id": "VND-001",
+      "invoice_number": "APE-2606-0015",
+      "invoice_date": "2026-06-23",
+      "due_date": "2026-07-23",
+      "currency": "USD",
+      "subtotal": 6251.07,
+      "tax_amount": 500.09,
+      "total_amount": 6751.16,
+      "po_number": "PO-2026-0013",
+      "department_id": "DEP-003",
+      "status": "paid",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-06-28T11:49:04Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000013",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-07-05T11:49:04Z",
+        "reference": "SIM-REF-000013"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-06-24T08:49:04Z",
+      "source": "erp_feed",
+      "idempotency_key": "0fcfd07a3b61c075"
+    },
+    {
+      "record_id": "ERP-INV-000014",
+      "invoice_id": "INV-0016",
+      "vendor_id": "VND-001",
+      "invoice_number": "APE-2607-0016",
+      "invoice_date": "2026-07-18",
+      "due_date": "2026-08-17",
+      "currency": "USD",
+      "subtotal": 4350.72,
+      "tax_amount": 348.06,
+      "total_amount": 4698.78,
+      "po_number": "PO-2026-0013",
+      "department_id": "DEP-003",
+      "status": "overdue",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "approved",
+        "approver_id": "EMP-008",
+        "decided_at": "2026-07-24T10:23:51Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-07-18T08:23:51Z",
+      "source": "erp_feed",
+      "idempotency_key": "051f4a8cd3fb750b"
+    },
+    {
+      "record_id": "ERP-INV-000015",
+      "invoice_id": "INV-0017",
+      "vendor_id": "VND-007",
+      "invoice_number": "DEL-2609-0017",
+      "invoice_date": "2026-09-25",
+      "due_date": "2026-10-25",
+      "currency": "USD",
+      "subtotal": 5572.7,
+      "tax_amount": 445.82,
+      "total_amount": 6018.52,
+      "po_number": "PO-2026-0014",
+      "department_id": "DEP-003",
+      "status": "approved",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-09-30T11:55:46Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-09-25T07:55:46Z",
+      "source": "erp_feed",
+      "idempotency_key": "1e2012f252565a75"
+    },
+    {
+      "record_id": "ERP-INV-000016",
+      "invoice_id": "INV-0018",
+      "vendor_id": "VND-019",
+      "invoice_number": "PIN-2603-0018",
+      "invoice_date": "2026-03-01",
+      "due_date": "2026-03-31",
+      "currency": "GBP",
+      "subtotal": 8425.2,
+      "tax_amount": 1685.04,
+      "total_amount": 10110.24,
+      "po_number": "PO-2026-0015",
+      "department_id": "DEP-007",
+      "status": "paid",
+      "approval": {
+        "required_tier": 3,
+        "required_role": "finance_manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-03-04T20:47:34Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000016",
+        "authorized_by": "EMP-001",
+        "paid_at": "2026-03-11T20:47:34Z",
+        "reference": "SIM-REF-000016"
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-03-02T12:47:34Z",
+      "source": "erp_feed",
+      "idempotency_key": "82743f2c8727626a"
+    },
+    {
+      "record_id": "ERP-INV-000017",
+      "invoice_id": "INV-0019",
+      "vendor_id": "VND-019",
+      "invoice_number": "PIN-2604-0019",
+      "invoice_date": "2026-04-28",
+      "due_date": "2026-05-28",
+      "currency": "GBP",
+      "subtotal": 4583.36,
+      "tax_amount": 916.67,
+      "total_amount": 5500.03,
+      "po_number": "PO-2026-0015",
+      "department_id": "DEP-007",
+      "status": "paid",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-04-30T08:54:45Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000017",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-05-01T08:54:45Z",
+        "reference": "SIM-REF-000017"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-04-29T07:54:45Z",
+      "source": "erp_feed",
+      "idempotency_key": "2bc130d02a28ff0c"
+    },
+    {
+      "record_id": "ERP-INV-000018",
+      "invoice_id": "INV-0020",
+      "vendor_id": "VND-010",
+      "invoice_number": "GRA-2607-0020",
+      "invoice_date": "2026-07-19",
+      "due_date": "2026-08-18",
+      "currency": "USD",
+      "subtotal": 1519.0,
+      "tax_amount": 121.52,
+      "total_amount": 1640.52,
+      "po_number": "PO-2026-0016",
+      "department_id": "DEP-003",
+      "status": "overdue",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-07-20T22:37:48Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-07-19T15:37:48Z",
+      "source": "erp_feed",
+      "idempotency_key": "73d755137531053b"
+    },
+    {
+      "record_id": "ERP-INV-000019",
+      "invoice_id": "INV-0021",
+      "vendor_id": "VND-005",
+      "invoice_number": "COB-2609-0021",
+      "invoice_date": "2026-09-26",
+      "due_date": "2026-10-26",
+      "currency": "EUR",
+      "subtotal": 404.28,
+      "tax_amount": 76.81,
+      "total_amount": 481.09,
+      "po_number": "PO-2026-0017",
+      "department_id": "DEP-003",
+      "status": "approved",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-09-30T11:54:18Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-09-27T07:54:18Z",
+      "source": "erp_feed",
+      "idempotency_key": "b7027efb797126e6"
+    },
+    {
+      "record_id": "ERP-INV-000020",
+      "invoice_id": "INV-0022",
+      "vendor_id": "VND-010",
+      "invoice_number": "GRA-2609-0022",
+      "invoice_date": "2026-09-11",
+      "due_date": "2026-10-11",
+      "currency": "USD",
+      "subtotal": 5241.6,
+      "tax_amount": 419.33,
+      "total_amount": 5660.93,
+      "po_number": "PO-2026-0018",
+      "department_id": "DEP-006",
+      "status": "pending_approval",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "pending",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-09-12T13:53:39Z",
+      "source": "erp_feed",
+      "idempotency_key": "4ec7c2713fbb1da3"
+    },
+    {
+      "record_id": "ERP-INV-000021",
+      "invoice_id": "INV-0023",
+      "vendor_id": "VND-005",
+      "invoice_number": "COB-2608-0023",
+      "invoice_date": "2026-08-08",
+      "due_date": "2026-09-07",
+      "currency": "EUR",
+      "subtotal": 585.56,
+      "tax_amount": 111.26,
+      "total_amount": 696.82,
+      "po_number": "PO-2026-0019",
+      "department_id": "DEP-003",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-08-14T17:13:07Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000021",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-08-26T17:13:07Z",
+        "reference": "SIM-REF-000021"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-08-09T15:13:07Z",
+      "source": "erp_feed",
+      "idempotency_key": "2649cd8a1a684173"
+    },
+    {
+      "record_id": "ERP-INV-000022",
+      "invoice_id": "INV-0024",
+      "vendor_id": "VND-005",
+      "invoice_number": "COB-2609-0024",
+      "invoice_date": "2026-09-22",
+      "due_date": "2026-10-22",
+      "currency": "EUR",
+      "subtotal": 8460.27,
+      "tax_amount": 1607.45,
+      "total_amount": 10067.72,
+      "po_number": "PO-2026-0019",
+      "department_id": "DEP-003",
+      "status": "approved",
+      "approval": {
+        "required_tier": 3,
+        "required_role": "finance_manager",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-09-25T18:30:38Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-09-22T10:30:38Z",
+      "source": "erp_feed",
+      "idempotency_key": "3b81e6f69056db81"
+    },
+    {
+      "record_id": "ERP-INV-000023",
+      "invoice_id": "INV-0025",
+      "vendor_id": "VND-016",
+      "invoice_number": "MAP-2606-0025",
+      "invoice_date": "2026-06-01",
+      "due_date": "2026-06-16",
+      "currency": "CAD",
+      "subtotal": 1573.39,
+      "tax_amount": 204.54,
+      "total_amount": 1777.93,
+      "po_number": "PO-2026-0020",
+      "department_id": "DEP-004",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-012",
+        "decided_at": "2026-06-04T18:53:01Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000023",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-06-24T18:53:01Z",
+        "reference": "SIM-REF-000023"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-06-03T13:53:01Z",
+      "source": "erp_feed",
+      "idempotency_key": "2f50e45fc4ecdddc"
+    },
+    {
+      "record_id": "ERP-INV-000024",
+      "invoice_id": "INV-0026",
+      "vendor_id": "VND-016",
+      "invoice_number": "MAP-2607-0026",
+      "invoice_date": "2026-07-13",
+      "due_date": "2026-07-28",
+      "currency": "CAD",
+      "subtotal": 9953.52,
+      "tax_amount": 1293.96,
+      "total_amount": 11247.48,
+      "po_number": "PO-2026-0020",
+      "department_id": "DEP-004",
+      "status": "disputed",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "on_hold",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-07-15T17:05:26Z",
+      "source": "erp_feed",
+      "idempotency_key": "967b722ad00838cd"
+    },
+    {
+      "record_id": "ERP-INV-000025",
+      "invoice_id": "INV-0027",
+      "vendor_id": "VND-005",
+      "invoice_number": "COB-2606-0027",
+      "invoice_date": "2026-06-08",
+      "due_date": "2026-07-08",
+      "currency": "EUR",
+      "subtotal": 642.2,
+      "tax_amount": 122.02,
+      "total_amount": 764.22,
+      "po_number": "PO-2026-0021",
+      "department_id": "DEP-003",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-009",
+        "decided_at": "2026-06-12T23:47:10Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000025",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-06-13T23:47:10Z",
+        "reference": "SIM-REF-000025"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-06-09T15:47:10Z",
+      "source": "erp_feed",
+      "idempotency_key": "b9164325021044cf"
+    },
+    {
+      "record_id": "ERP-INV-000026",
+      "invoice_id": "INV-0028",
+      "vendor_id": "VND-005",
+      "invoice_number": "COB-2607-0028",
+      "invoice_date": "2026-07-25",
+      "due_date": "2026-08-24",
+      "currency": "EUR",
+      "subtotal": 642.2,
+      "tax_amount": 122.02,
+      "total_amount": 764.22,
+      "po_number": "PO-2026-0021",
+      "department_id": "DEP-003",
+      "status": "disputed",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "on_hold",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-07-25T07:39:09Z",
+      "source": "erp_feed",
+      "idempotency_key": "32626e68b40cd2f1"
+    },
+    {
+      "record_id": "ERP-INV-000027",
+      "invoice_id": "INV-0029",
+      "vendor_id": "VND-004",
+      "invoice_number": "BRI-2606-0029",
+      "invoice_date": "2026-06-05",
+      "due_date": "2026-07-20",
+      "currency": "USD",
+      "subtotal": 1019.2,
+      "tax_amount": 81.54,
+      "total_amount": 1100.74,
+      "po_number": "PO-2026-0022",
+      "department_id": "DEP-002",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-06-08T21:35:11Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000027",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-07-03T21:35:11Z",
+        "reference": "SIM-REF-000027"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-06-07T15:35:11Z",
+      "source": "erp_feed",
+      "idempotency_key": "03b0d61e99490122"
+    },
+    {
+      "record_id": "ERP-INV-000028",
+      "invoice_id": "INV-0030",
+      "vendor_id": "VND-004",
+      "invoice_number": "BRI-2608-0030",
+      "invoice_date": "2026-08-04",
+      "due_date": "2026-09-18",
+      "currency": "USD",
+      "subtotal": 1164.8,
+      "tax_amount": 93.18,
+      "total_amount": 1257.98,
+      "po_number": "PO-2026-0022",
+      "department_id": "DEP-002",
+      "status": "overdue",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-08-10T11:25:00Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-08-04T09:25:00Z",
+      "source": "erp_feed",
+      "idempotency_key": "85046a933b95351c"
+    },
+    {
+      "record_id": "ERP-INV-000029",
+      "invoice_id": "INV-0031",
+      "vendor_id": "VND-020",
+      "invoice_number": "QUA-2608-0031",
+      "invoice_date": "2026-08-24",
+      "due_date": "2026-09-23",
+      "currency": "USD",
+      "subtotal": 14826.8,
+      "tax_amount": 1186.14,
+      "total_amount": 16012.94,
+      "po_number": "PO-2026-0023",
+      "department_id": "DEP-003",
+      "status": "disputed",
+      "approval": {
+        "required_tier": 3,
+        "required_role": "finance_manager",
+        "status": "on_hold",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-08-26T17:45:16Z",
+      "source": "erp_feed",
+      "idempotency_key": "9a524b56221813e3"
+    },
+    {
+      "record_id": "ERP-INV-000030",
+      "invoice_id": "INV-0032",
+      "vendor_id": "VND-004",
+      "invoice_number": "BRI-2606-0032",
+      "invoice_date": "2026-06-06",
+      "due_date": "2026-07-21",
+      "currency": "USD",
+      "subtotal": 2455.2,
+      "tax_amount": 196.42,
+      "total_amount": 2651.62,
+      "po_number": "PO-2026-0024",
+      "department_id": "DEP-002",
+      "status": "paid",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-06-13T22:07:30Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000030",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-06-17T22:07:30Z",
+        "reference": "SIM-REF-000030"
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-06-07T16:07:30Z",
+      "source": "erp_feed",
+      "idempotency_key": "bd4108e952cd0bed"
+    },
+    {
+      "record_id": "ERP-INV-000031",
+      "invoice_id": "INV-0034",
+      "vendor_id": "VND-022",
+      "invoice_number": "STE-2609-0034",
+      "invoice_date": "2026-09-21",
+      "due_date": "2026-10-06",
+      "currency": "GBP",
+      "subtotal": 158.74,
+      "tax_amount": 31.75,
+      "total_amount": 190.49,
+      "po_number": "",
+      "department_id": "DEP-004",
+      "status": "approved",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-09-24T16:58:18Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-09-21T09:58:18Z",
+      "source": "erp_feed",
+      "idempotency_key": "38523960742950e5"
+    },
+    {
+      "record_id": "ERP-INV-000032",
+      "invoice_id": "INV-0035",
+      "vendor_id": "VND-014",
+      "invoice_number": "KEY-2609-0035",
+      "invoice_date": "2026-09-16",
+      "due_date": "2026-10-31",
+      "currency": "USD",
+      "subtotal": 209.0,
+      "tax_amount": 16.72,
+      "total_amount": 225.72,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "pending_approval",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "pending",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-09-17T10:00:35Z",
+      "source": "erp_feed",
+      "idempotency_key": "6b1542fbd486230a"
+    },
+    {
+      "record_id": "ERP-INV-000033",
+      "invoice_id": "INV-0036",
+      "vendor_id": "VND-010",
+      "invoice_number": "GRA-2606-0036",
+      "invoice_date": "2026-06-16",
+      "due_date": "2026-07-16",
+      "currency": "USD",
+      "subtotal": 313.1,
+      "tax_amount": 25.05,
+      "total_amount": 338.15,
+      "po_number": "",
+      "department_id": "DEP-006",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-017",
+        "decided_at": "2026-06-17T11:19:17Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000033",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-06-26T11:19:17Z",
+        "reference": "SIM-REF-000033"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-06-16T09:19:17Z",
+      "source": "erp_feed",
+      "idempotency_key": "b934d2305e5ebabb"
+    },
+    {
+      "record_id": "ERP-INV-000034",
+      "invoice_id": "INV-0038",
+      "vendor_id": "VND-015",
+      "invoice_number": "LUM-2609-0038",
+      "invoice_date": "2026-09-21",
+      "due_date": "2026-10-21",
+      "currency": "CAD",
+      "subtotal": 275.04,
+      "tax_amount": 35.76,
+      "total_amount": 310.8,
+      "po_number": "",
+      "department_id": "DEP-006",
+      "status": "pending_approval",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "pending",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-09-22T13:10:04Z",
+      "source": "erp_feed",
+      "idempotency_key": "c2fcf84a008bd61a"
+    },
+    {
+      "record_id": "ERP-INV-000035",
+      "invoice_id": "INV-0039",
+      "vendor_id": "VND-005",
+      "invoice_number": "COB-2603-0039",
+      "invoice_date": "2026-03-08",
+      "due_date": "2026-04-07",
+      "currency": "EUR",
+      "subtotal": 202.72,
+      "tax_amount": 38.52,
+      "total_amount": 241.24,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-03-10T16:46:25Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000035",
+        "authorized_by": "EMP-001",
+        "paid_at": "2026-03-29T16:46:25Z",
+        "reference": "SIM-REF-000035"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-03-09T11:46:25Z",
+      "source": "erp_feed",
+      "idempotency_key": "b3fcc325bf41de39"
+    },
+    {
+      "record_id": "ERP-INV-000036",
+      "invoice_id": "INV-0041",
+      "vendor_id": "VND-004",
+      "invoice_number": "BRI-2609-0041",
+      "invoice_date": "2026-09-22",
+      "due_date": "2026-11-06",
+      "currency": "USD",
+      "subtotal": 130.2,
+      "tax_amount": 10.42,
+      "total_amount": 140.62,
+      "po_number": "",
+      "department_id": "DEP-002",
+      "status": "pending_approval",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "pending",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-09-23T10:48:37Z",
+      "source": "erp_feed",
+      "idempotency_key": "bbfe06a9be601a3b"
+    },
+    {
+      "record_id": "ERP-INV-000037",
+      "invoice_id": "INV-0042",
+      "vendor_id": "VND-019",
+      "invoice_number": "PIN-2603-0042",
+      "invoice_date": "2026-03-12",
+      "due_date": "2026-04-11",
+      "currency": "GBP",
+      "subtotal": 234.33,
+      "tax_amount": 46.87,
+      "total_amount": 281.2,
+      "po_number": "",
+      "department_id": "DEP-001",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-03-14T19:37:54Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000037",
+        "authorized_by": "EMP-001",
+        "paid_at": "2026-03-30T19:37:54Z",
+        "reference": "SIM-REF-000037"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-03-12T13:37:54Z",
+      "source": "erp_feed",
+      "idempotency_key": "43b9f1c660439f36"
+    },
+    {
+      "record_id": "ERP-INV-000038",
+      "invoice_id": "INV-0044",
+      "vendor_id": "VND-012",
+      "invoice_number": "IND-2609-0044",
+      "invoice_date": "2026-09-24",
+      "due_date": "2026-11-08",
+      "currency": "INR",
+      "subtotal": 19600.0,
+      "tax_amount": 3528.0,
+      "total_amount": 23128.0,
+      "po_number": "",
+      "department_id": "DEP-002",
+      "status": "approved",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-09-30T17:00:00Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-09-26T17:21:38Z",
+      "source": "erp_feed",
+      "idempotency_key": "8b87b01bec21bc77"
+    },
+    {
+      "record_id": "ERP-INV-000039",
+      "invoice_id": "INV-0045",
+      "vendor_id": "VND-001",
+      "invoice_number": "APE-2607-0045",
+      "invoice_date": "2026-07-22",
+      "due_date": "2026-08-21",
+      "currency": "USD",
+      "subtotal": 179.76,
+      "tax_amount": 14.38,
+      "total_amount": 194.14,
+      "po_number": "",
+      "department_id": "DEP-001",
+      "status": "disputed",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "on_hold",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-07-24T12:19:55Z",
+      "source": "erp_feed",
+      "idempotency_key": "6f99e281a6b39097"
+    },
+    {
+      "record_id": "ERP-INV-000040",
+      "invoice_id": "INV-0046",
+      "vendor_id": "VND-016",
+      "invoice_number": "MAP-2609-0046",
+      "invoice_date": "2026-09-27",
+      "due_date": "2026-10-12",
+      "currency": "CAD",
+      "subtotal": 33.73,
+      "tax_amount": 4.38,
+      "total_amount": 38.11,
+      "po_number": "",
+      "department_id": "DEP-004",
+      "status": "approved",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-09-30T17:00:00Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-09-27T13:48:50Z",
+      "source": "erp_feed",
+      "idempotency_key": "0888bb17991749cf"
+    },
+    {
+      "record_id": "ERP-INV-000041",
+      "invoice_id": "INV-0047",
+      "vendor_id": "VND-007",
+      "invoice_number": "DEL-2606-0047",
+      "invoice_date": "2026-06-01",
+      "due_date": "2026-07-01",
+      "currency": "USD",
+      "subtotal": 234.84,
+      "tax_amount": 18.79,
+      "total_amount": 253.63,
+      "po_number": "",
+      "department_id": "DEP-004",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-012",
+        "decided_at": "2026-06-02T23:50:35Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000041",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-06-21T23:50:35Z",
+        "reference": "SIM-REF-000041"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-06-01T15:50:35Z",
+      "source": "erp_feed",
+      "idempotency_key": "460f2508378f7f0f"
+    },
+    {
+      "record_id": "ERP-INV-000042",
+      "invoice_id": "INV-0048",
+      "vendor_id": "VND-024",
+      "invoice_number": "UMB-2601-0048",
+      "invoice_date": "2026-01-25",
+      "due_date": "2026-02-24",
+      "currency": "USD",
+      "subtotal": 332.8,
+      "tax_amount": 26.62,
+      "total_amount": 359.42,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-01-30T22:49:21Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000042",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-02-16T22:49:21Z",
+        "reference": "SIM-REF-000042"
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-01-27T14:49:21Z",
+      "source": "erp_feed",
+      "idempotency_key": "9167d7464c7e1816"
+    },
+    {
+      "record_id": "ERP-INV-000043",
+      "invoice_id": "INV-0049",
+      "vendor_id": "VND-018",
+      "invoice_number": "ORC-2607-0049",
+      "invoice_date": "2026-07-16",
+      "due_date": "2026-08-15",
+      "currency": "GBP",
+      "subtotal": 190.39,
+      "tax_amount": 38.08,
+      "total_amount": 228.47,
+      "po_number": "",
+      "department_id": "DEP-004",
+      "status": "rejected",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "rejected",
+        "approver_id": "EMP-012",
+        "decided_at": "2026-07-21T11:21:41Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-07-18T08:21:41Z",
+      "source": "erp_feed",
+      "idempotency_key": "5c23809c0d137268"
+    },
+    {
+      "record_id": "ERP-INV-000044",
+      "invoice_id": "INV-0050",
+      "vendor_id": "VND-005",
+      "invoice_number": "COB-2608-0050",
+      "invoice_date": "2026-08-13",
+      "due_date": "2026-09-12",
+      "currency": "EUR",
+      "subtotal": 102.0,
+      "tax_amount": 19.38,
+      "total_amount": 121.38,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "overdue",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-009",
+        "decided_at": "2026-08-17T15:07:14Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-08-14T08:07:14Z",
+      "source": "erp_feed",
+      "idempotency_key": "80d66376a85e1beb"
+    },
+    {
+      "record_id": "ERP-INV-000045",
+      "invoice_id": "INV-0051",
+      "vendor_id": "VND-010",
+      "invoice_number": "GRA-2607-0051",
+      "invoice_date": "2026-07-18",
+      "due_date": "2026-08-17",
+      "currency": "USD",
+      "subtotal": 260.0,
+      "tax_amount": 20.8,
+      "total_amount": 280.8,
+      "po_number": "",
+      "department_id": "DEP-006",
+      "status": "disputed",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "on_hold",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-07-18T17:22:25Z",
+      "source": "erp_feed",
+      "idempotency_key": "b4c1fbe1e632bb5d"
+    },
+    {
+      "record_id": "ERP-INV-000046",
+      "invoice_id": "INV-0052",
+      "vendor_id": "VND-004",
+      "invoice_number": "BRI-2608-0052",
+      "invoice_date": "2026-08-13",
+      "due_date": "2026-09-27",
+      "currency": "USD",
+      "subtotal": 151.8,
+      "tax_amount": 12.14,
+      "total_amount": 163.94,
+      "po_number": "",
+      "department_id": "DEP-004",
+      "status": "disputed",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "on_hold",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-08-14T13:31:48Z",
+      "source": "erp_feed",
+      "idempotency_key": "915c5793e53797f5"
+    },
+    {
+      "record_id": "ERP-INV-000047",
+      "invoice_id": "INV-0053",
+      "vendor_id": "VND-020",
+      "invoice_number": "QUA-2606-0053",
+      "invoice_date": "2026-06-26",
+      "due_date": "2026-07-26",
+      "currency": "USD",
+      "subtotal": 357.2,
+      "tax_amount": 28.58,
+      "total_amount": 385.78,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "rejected",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "rejected",
+        "approver_id": "EMP-009",
+        "decided_at": "2026-06-27T21:57:29Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-06-26T16:57:29Z",
+      "source": "erp_feed",
+      "idempotency_key": "0a560a0e68adbb60"
+    },
+    {
+      "record_id": "ERP-INV-000048",
+      "invoice_id": "INV-0054",
+      "vendor_id": "VND-022",
+      "invoice_number": "STE-2601-0054",
+      "invoice_date": "2026-01-28",
+      "due_date": "2026-02-12",
+      "currency": "GBP",
+      "subtotal": 143.62,
+      "tax_amount": 28.72,
+      "total_amount": 172.34,
+      "po_number": "",
+      "department_id": "DEP-004",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-01-30T19:25:27Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000048",
+        "authorized_by": "EMP-001",
+        "paid_at": "2026-02-14T19:25:27Z",
+        "reference": "SIM-REF-000048"
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-01-29T12:25:27Z",
+      "source": "erp_feed",
+      "idempotency_key": "1b208df07be12976"
+    },
+    {
+      "record_id": "ERP-INV-000049",
+      "invoice_id": "INV-0055",
+      "vendor_id": "VND-007",
+      "invoice_number": "DEL-2604-0055",
+      "invoice_date": "2026-04-15",
+      "due_date": "2026-05-15",
+      "currency": "USD",
+      "subtotal": 221.45,
+      "tax_amount": 17.72,
+      "total_amount": 239.17,
+      "po_number": "",
+      "department_id": "DEP-004",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-012",
+        "decided_at": "2026-04-17T13:17:09Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000049",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-04-27T13:17:09Z",
+        "reference": "SIM-REF-000049"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-04-16T08:17:09Z",
+      "source": "erp_feed",
+      "idempotency_key": "e31ce77a6bcd447f"
+    },
+    {
+      "record_id": "ERP-INV-000050",
+      "invoice_id": "INV-0056",
+      "vendor_id": "VND-003",
+      "invoice_number": "BRI-2602-0056",
+      "invoice_date": "2026-02-22",
+      "due_date": "2026-03-24",
+      "currency": "USD",
+      "subtotal": 296.8,
+      "tax_amount": 23.74,
+      "total_amount": 320.54,
+      "po_number": "",
+      "department_id": "DEP-002",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-03-01T13:07:37Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000050",
+        "authorized_by": "EMP-001",
+        "paid_at": "2026-03-03T13:07:37Z",
+        "reference": "SIM-REF-000050"
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-02-24T07:07:37Z",
+      "source": "erp_feed",
+      "idempotency_key": "e7aa0fe673df82df"
+    },
+    {
+      "record_id": "ERP-INV-000051",
+      "invoice_id": "INV-0057",
+      "vendor_id": "VND-005",
+      "invoice_number": "COB-2607-0057",
+      "invoice_date": "2026-07-31",
+      "due_date": "2026-08-30",
+      "currency": "EUR",
+      "subtotal": 89.73,
+      "tax_amount": 17.05,
+      "total_amount": 106.78,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "disputed",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "on_hold",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-07-31T09:18:19Z",
+      "source": "erp_feed",
+      "idempotency_key": "3352ddd77fe0f6c8"
+    },
+    {
+      "record_id": "ERP-INV-000052",
+      "invoice_id": "INV-0058",
+      "vendor_id": "VND-020",
+      "invoice_number": "QUA-2606-0058",
+      "invoice_date": "2026-06-16",
+      "due_date": "2026-07-16",
+      "currency": "USD",
+      "subtotal": 380.0,
+      "tax_amount": 30.4,
+      "total_amount": 410.4,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "disputed",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "on_hold",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-06-17T12:51:40Z",
+      "source": "erp_feed",
+      "idempotency_key": "cd2b35ec693dea25"
+    },
+    {
+      "record_id": "ERP-INV-000053",
+      "invoice_id": "INV-0059",
+      "vendor_id": "VND-012",
+      "invoice_number": "IND-2609-0059",
+      "invoice_date": "2026-09-17",
+      "due_date": "2026-11-01",
+      "currency": "INR",
+      "subtotal": 9800.0,
+      "tax_amount": 1764.0,
+      "total_amount": 11564.0,
+      "po_number": "",
+      "department_id": "DEP-004",
+      "status": "pending_approval",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "pending",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-09-19T09:31:37Z",
+      "source": "erp_feed",
+      "idempotency_key": "e6900596dbadc9c5"
+    },
+    {
+      "record_id": "ERP-INV-000054",
+      "invoice_id": "INV-0061",
+      "vendor_id": "VND-005",
+      "invoice_number": "COB-2605-0061",
+      "invoice_date": "2026-05-08",
+      "due_date": "2026-06-07",
+      "currency": "EUR",
+      "subtotal": 28.96,
+      "tax_amount": 5.5,
+      "total_amount": 34.46,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-05-11T14:09:27Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000054",
+        "authorized_by": "EMP-001",
+        "paid_at": "2026-05-28T14:09:27Z",
+        "reference": "SIM-REF-000054"
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-05-10T11:09:27Z",
+      "source": "erp_feed",
+      "idempotency_key": "79bb404b9351671c"
+    },
+    {
+      "record_id": "ERP-INV-000055",
+      "invoice_id": "INV-0064",
+      "vendor_id": "VND-020",
+      "invoice_number": "QUA-2601-0064",
+      "invoice_date": "2026-01-25",
+      "due_date": "2026-02-24",
+      "currency": "USD",
+      "subtotal": 364.8,
+      "tax_amount": 29.18,
+      "total_amount": 393.98,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-008",
+        "decided_at": "2026-01-28T19:23:47Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000055",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-02-05T19:23:47Z",
+        "reference": "SIM-REF-000055"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-01-26T12:23:47Z",
+      "source": "erp_feed",
+      "idempotency_key": "10967a8d46dcfbd9"
+    },
+    {
+      "record_id": "ERP-INV-000056",
+      "invoice_id": "INV-0065",
+      "vendor_id": "VND-017",
+      "invoice_number": "NIM-2607-0065",
+      "invoice_date": "2026-07-25",
+      "due_date": "2026-08-24",
+      "currency": "EUR",
+      "subtotal": 188.24,
+      "tax_amount": 35.77,
+      "total_amount": 224.01,
+      "po_number": "",
+      "department_id": "DEP-006",
+      "status": "overdue",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-07-30T22:10:37Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-07-27T14:10:37Z",
+      "source": "erp_feed",
+      "idempotency_key": "015aec098014fb9d"
+    },
+    {
+      "record_id": "ERP-INV-000057",
+      "invoice_id": "INV-0066",
+      "vendor_id": "VND-005",
+      "invoice_number": "COB-2607-0066",
+      "invoice_date": "2026-07-01",
+      "due_date": "2026-07-31",
+      "currency": "EUR",
+      "subtotal": 57.92,
+      "tax_amount": 11.0,
+      "total_amount": 68.92,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "disputed",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "on_hold",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-07-03T17:09:35Z",
+      "source": "erp_feed",
+      "idempotency_key": "18d05addf31813ff"
+    },
+    {
+      "record_id": "ERP-INV-000058",
+      "invoice_id": "INV-0067",
+      "vendor_id": "VND-014",
+      "invoice_number": "KEY-2606-0067",
+      "invoice_date": "2026-06-04",
+      "due_date": "2026-07-19",
+      "currency": "USD",
+      "subtotal": 363.0,
+      "tax_amount": 29.04,
+      "total_amount": 392.04,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "disputed",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "on_hold",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-06-04T11:11:36Z",
+      "source": "erp_feed",
+      "idempotency_key": "fee1a780ef893a0c"
+    },
+    {
+      "record_id": "ERP-INV-000059",
+      "invoice_id": "INV-0068",
+      "vendor_id": "VND-017",
+      "invoice_number": "NIM-2606-0068",
+      "invoice_date": "2026-06-23",
+      "due_date": "2026-07-23",
+      "currency": "EUR",
+      "subtotal": 277.08,
+      "tax_amount": 52.65,
+      "total_amount": 329.73,
+      "po_number": "",
+      "department_id": "DEP-002",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-06-28T01:35:43Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000059",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-07-18T01:35:43Z",
+        "reference": "SIM-REF-000059"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-06-25T17:35:43Z",
+      "source": "erp_feed",
+      "idempotency_key": "2f22b35ab8f31abe"
+    },
+    {
+      "record_id": "ERP-INV-000060",
+      "invoice_id": "INV-0069",
+      "vendor_id": "VND-021",
+      "invoice_number": "RED-2601-0069",
+      "invoice_date": "2026-01-18",
+      "due_date": "2026-02-17",
+      "currency": "USD",
+      "subtotal": 357.0,
+      "tax_amount": 28.56,
+      "total_amount": 385.56,
+      "po_number": "",
+      "department_id": "DEP-002",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-006",
+        "decided_at": "2026-01-25T13:04:34Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000060",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-01-28T13:04:34Z",
+        "reference": "SIM-REF-000060"
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-01-19T08:04:34Z",
+      "source": "erp_feed",
+      "idempotency_key": "c4e0e5ca55a7cbce"
+    },
+    {
+      "record_id": "ERP-INV-000061",
+      "invoice_id": "INV-0070",
+      "vendor_id": "VND-011",
+      "invoice_number": "HAR-2605-0070",
+      "invoice_date": "2026-05-23",
+      "due_date": "2026-06-22",
+      "currency": "GBP",
+      "subtotal": 158.58,
+      "tax_amount": 31.72,
+      "total_amount": 190.3,
+      "po_number": "",
+      "department_id": "DEP-004",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-05-27T17:52:48Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000061",
+        "authorized_by": "EMP-001",
+        "paid_at": "2026-05-28T17:52:48Z",
+        "reference": "SIM-REF-000061"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-05-25T16:52:48Z",
+      "source": "erp_feed",
+      "idempotency_key": "4513b48a4d69cf0a"
+    },
+    {
+      "record_id": "ERP-INV-000062",
+      "invoice_id": "INV-0071",
+      "vendor_id": "VND-020",
+      "invoice_number": "QUA-2605-0071",
+      "invoice_date": "2026-05-14",
+      "due_date": "2026-06-13",
+      "currency": "USD",
+      "subtotal": 364.8,
+      "tax_amount": 29.18,
+      "total_amount": 393.98,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-05-20T16:51:16Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000062",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-06-10T16:51:16Z",
+        "reference": "SIM-REF-000062"
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-05-16T14:51:16Z",
+      "source": "erp_feed",
+      "idempotency_key": "6c7a541f2b173b78"
+    },
+    {
+      "record_id": "ERP-INV-000063",
+      "invoice_id": "INV-0072",
+      "vendor_id": "VND-022",
+      "invoice_number": "STE-2603-0072",
+      "invoice_date": "2026-03-07",
+      "due_date": "2026-03-22",
+      "currency": "GBP",
+      "subtotal": 204.1,
+      "tax_amount": 40.82,
+      "total_amount": 244.92,
+      "po_number": "",
+      "department_id": "DEP-004",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-03-13T13:06:04Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000063",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-03-28T13:06:04Z",
+        "reference": "SIM-REF-000063"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-03-07T09:06:04Z",
+      "source": "erp_feed",
+      "idempotency_key": "9dd77a914803ec9b"
+    },
+    {
+      "record_id": "ERP-INV-000064",
+      "invoice_id": "INV-0073",
+      "vendor_id": "VND-025",
+      "invoice_number": "VAN-2603-0073",
+      "invoice_date": "2026-03-04",
+      "due_date": "2026-05-03",
+      "currency": "INR",
+      "subtotal": 14570.0,
+      "tax_amount": 2622.6,
+      "total_amount": 17192.6,
+      "po_number": "",
+      "department_id": "DEP-006",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-016",
+        "decided_at": "2026-03-09T23:33:59Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000064",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-03-22T23:33:59Z",
+        "reference": "SIM-REF-000064"
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-03-06T15:33:59Z",
+      "source": "erp_feed",
+      "idempotency_key": "a0c8bc0b800055d8"
+    },
+    {
+      "record_id": "ERP-INV-000065",
+      "invoice_id": "INV-0075",
+      "vendor_id": "VND-014",
+      "invoice_number": "KEY-2606-0075",
+      "invoice_date": "2026-06-11",
+      "due_date": "2026-07-26",
+      "currency": "USD",
+      "subtotal": 224.4,
+      "tax_amount": 17.95,
+      "total_amount": 242.35,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-009",
+        "decided_at": "2026-06-14T19:43:25Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000065",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-07-07T19:43:25Z",
+        "reference": "SIM-REF-000065"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-06-12T15:43:25Z",
+      "source": "erp_feed",
+      "idempotency_key": "10bd4a8606ec8137"
+    },
+    {
+      "record_id": "ERP-INV-000066",
+      "invoice_id": "INV-0076",
+      "vendor_id": "VND-015",
+      "invoice_number": "LUM-2609-0076",
+      "invoice_date": "2026-09-11",
+      "due_date": "2026-10-11",
+      "currency": "CAD",
+      "subtotal": 243.88,
+      "tax_amount": 31.7,
+      "total_amount": 275.58,
+      "po_number": "",
+      "department_id": "DEP-006",
+      "status": "approved",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-09-17T13:37:30Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-09-11T12:37:30Z",
+      "source": "erp_feed",
+      "idempotency_key": "0a09018530e48ddf"
+    },
+    {
+      "record_id": "ERP-INV-000067",
+      "invoice_id": "INV-0077",
+      "vendor_id": "VND-009",
+      "invoice_number": "FEN-2609-0077",
+      "invoice_date": "2026-09-06",
+      "due_date": "2026-10-06",
+      "currency": "GBP",
+      "subtotal": 93.54,
+      "tax_amount": 18.71,
+      "total_amount": 112.25,
+      "po_number": "",
+      "department_id": "DEP-002",
+      "status": "pending_approval",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "pending",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-09-06T08:45:24Z",
+      "source": "erp_feed",
+      "idempotency_key": "e7212b43abcaa2f2"
+    },
+    {
+      "record_id": "ERP-INV-000068",
+      "invoice_id": "INV-0078",
+      "vendor_id": "VND-022",
+      "invoice_number": "STE-2608-0078",
+      "invoice_date": "2026-08-23",
+      "due_date": "2026-09-07",
+      "currency": "GBP",
+      "subtotal": 44.3,
+      "tax_amount": 8.86,
+      "total_amount": 53.16,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "overdue",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-08-25T14:53:35Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-08-24T09:53:35Z",
+      "source": "erp_feed",
+      "idempotency_key": "6c8e66bf1b88871f"
+    },
+    {
+      "record_id": "ERP-INV-000069",
+      "invoice_id": "INV-0079",
+      "vendor_id": "VND-017",
+      "invoice_number": "NIM-2608-0079",
+      "invoice_date": "2026-08-25",
+      "due_date": "2026-09-24",
+      "currency": "EUR",
+      "subtotal": 91.48,
+      "tax_amount": 17.38,
+      "total_amount": 108.86,
+      "po_number": "",
+      "department_id": "DEP-006",
+      "status": "overdue",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-016",
+        "decided_at": "2026-08-28T20:48:29Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-08-27T15:48:29Z",
+      "source": "erp_feed",
+      "idempotency_key": "946c7a96762d9b36"
+    },
+    {
+      "record_id": "ERP-INV-000070",
+      "invoice_id": "INV-0080",
+      "vendor_id": "VND-010",
+      "invoice_number": "GRA-2606-0080",
+      "invoice_date": "2026-06-25",
+      "due_date": "2026-07-25",
+      "currency": "USD",
+      "subtotal": 254.8,
+      "tax_amount": 20.38,
+      "total_amount": 275.18,
+      "po_number": "",
+      "department_id": "DEP-006",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-06-30T10:37:30Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000070",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-07-05T10:37:30Z",
+        "reference": "SIM-REF-000070"
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-06-25T09:37:30Z",
+      "source": "erp_feed",
+      "idempotency_key": "a7dc8c2164746be0"
+    },
+    {
+      "record_id": "ERP-INV-000071",
+      "invoice_id": "INV-0081",
+      "vendor_id": "VND-015",
+      "invoice_number": "LUM-2607-0081",
+      "invoice_date": "2026-07-13",
+      "due_date": "2026-08-12",
+      "currency": "CAD",
+      "subtotal": 200.43,
+      "tax_amount": 26.06,
+      "total_amount": 226.49,
+      "po_number": "",
+      "department_id": "DEP-006",
+      "status": "rejected",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "rejected",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-07-17T18:06:20Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-07-15T10:06:20Z",
+      "source": "erp_feed",
+      "idempotency_key": "f19f573262219813"
+    },
+    {
+      "record_id": "ERP-INV-000072",
+      "invoice_id": "INV-0082",
+      "vendor_id": "VND-020",
+      "invoice_number": "QUA-2607-0082",
+      "invoice_date": "2026-07-21",
+      "due_date": "2026-08-20",
+      "currency": "USD",
+      "subtotal": 364.8,
+      "tax_amount": 29.18,
+      "total_amount": 393.98,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "disputed",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "on_hold",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-07-21T07:41:52Z",
+      "source": "erp_feed",
+      "idempotency_key": "be72481d4b249b91"
+    },
+    {
+      "record_id": "ERP-INV-000073",
+      "invoice_id": "INV-0083",
+      "vendor_id": "VND-003",
+      "invoice_number": "BRI-2609-0083",
+      "invoice_date": "2026-09-13",
+      "due_date": "2026-10-13",
+      "currency": "USD",
+      "subtotal": 165.0,
+      "tax_amount": 13.2,
+      "total_amount": 178.2,
+      "po_number": "",
+      "department_id": "DEP-004",
+      "status": "pending_approval",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "pending",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-09-15T07:44:57Z",
+      "source": "erp_feed",
+      "idempotency_key": "f43902e67958b26e"
+    },
+    {
+      "record_id": "ERP-INV-000074",
+      "invoice_id": "INV-0084",
+      "vendor_id": "VND-015",
+      "invoice_number": "LUM-2609-0084",
+      "invoice_date": "2026-09-09",
+      "due_date": "2026-10-09",
+      "currency": "CAD",
+      "subtotal": 467.67,
+      "tax_amount": 60.8,
+      "total_amount": 528.47,
+      "po_number": "",
+      "department_id": "DEP-006",
+      "status": "approved",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-016",
+        "decided_at": "2026-09-11T15:08:52Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-09-09T11:08:52Z",
+      "source": "erp_feed",
+      "idempotency_key": "72e1925d50e44534"
+    },
+    {
+      "record_id": "ERP-INV-000075",
+      "invoice_id": "INV-0085",
+      "vendor_id": "VND-025",
+      "invoice_number": "VAN-2604-0085",
+      "invoice_date": "2026-04-06",
+      "due_date": "2026-06-05",
+      "currency": "INR",
+      "subtotal": 17850.0,
+      "tax_amount": 3213.0,
+      "total_amount": 21063.0,
+      "po_number": "",
+      "department_id": "DEP-006",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-04-09T15:08:26Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000075",
+        "authorized_by": "EMP-001",
+        "paid_at": "2026-04-10T15:08:26Z",
+        "reference": "SIM-REF-000075"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-04-06T08:08:26Z",
+      "source": "erp_feed",
+      "idempotency_key": "61231c28cc01f13b"
+    },
+    {
+      "record_id": "ERP-INV-000076",
+      "invoice_id": "INV-0086",
+      "vendor_id": "VND-017",
+      "invoice_number": "NIM-2604-0086",
+      "invoice_date": "2026-04-25",
+      "due_date": "2026-05-25",
+      "currency": "EUR",
+      "subtotal": 95.88,
+      "tax_amount": 18.22,
+      "total_amount": 114.1,
+      "po_number": "",
+      "department_id": "DEP-006",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-05-02T19:44:57Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000076",
+        "authorized_by": "EMP-001",
+        "paid_at": "2026-05-22T19:44:57Z",
+        "reference": "SIM-REF-000076"
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-04-27T16:44:57Z",
+      "source": "erp_feed",
+      "idempotency_key": "c91dec311f1192a4"
+    },
+    {
+      "record_id": "ERP-INV-000077",
+      "invoice_id": "INV-0088",
+      "vendor_id": "VND-005",
+      "invoice_number": "COB-2608-0088",
+      "invoice_date": "2026-08-25",
+      "due_date": "2026-09-24",
+      "currency": "EUR",
+      "subtotal": 149.55,
+      "tax_amount": 28.41,
+      "total_amount": 177.96,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "overdue",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-009",
+        "decided_at": "2026-08-31T20:16:16Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-08-25T15:16:16Z",
+      "source": "erp_feed",
+      "idempotency_key": "857ab0e7a3cb5bf3"
+    },
+    {
+      "record_id": "ERP-INV-000078",
+      "invoice_id": "INV-0089",
+      "vendor_id": "VND-004",
+      "invoice_number": "BRI-2608-0089",
+      "invoice_date": "2026-08-25",
+      "due_date": "2026-10-09",
+      "currency": "USD",
+      "subtotal": 160.05,
+      "tax_amount": 12.8,
+      "total_amount": 172.85,
+      "po_number": "",
+      "department_id": "DEP-004",
+      "status": "approved",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-012",
+        "decided_at": "2026-08-28T20:21:29Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-08-27T15:21:29Z",
+      "source": "erp_feed",
+      "idempotency_key": "5452d3208f8a10f5"
+    },
+    {
+      "record_id": "ERP-INV-000079",
+      "invoice_id": "INV-0090",
+      "vendor_id": "VND-008",
+      "invoice_number": "EVE-2607-0090",
+      "invoice_date": "2026-07-29",
+      "due_date": "2026-08-28",
+      "currency": "CAD",
+      "subtotal": 404.4,
+      "tax_amount": 52.57,
+      "total_amount": 456.97,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "disputed",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "on_hold",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-07-30T10:18:17Z",
+      "source": "erp_feed",
+      "idempotency_key": "0e9793fccd271eff"
+    },
+    {
+      "record_id": "ERP-INV-000080",
+      "invoice_id": "INV-0091",
+      "vendor_id": "VND-016",
+      "invoice_number": "MAP-2609-0091",
+      "invoice_date": "2026-09-22",
+      "due_date": "2026-10-07",
+      "currency": "CAD",
+      "subtotal": 142.72,
+      "tax_amount": 18.55,
+      "total_amount": 161.27,
+      "po_number": "",
+      "department_id": "DEP-004",
+      "status": "approved",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-09-28T13:26:51Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-09-24T10:26:51Z",
+      "source": "erp_feed",
+      "idempotency_key": "c3d2d493a4e7d6fc"
+    },
+    {
+      "record_id": "ERP-INV-000081",
+      "invoice_id": "INV-0092",
+      "vendor_id": "VND-018",
+      "invoice_number": "ORC-2609-0092",
+      "invoice_date": "2026-09-21",
+      "due_date": "2026-10-21",
+      "currency": "GBP",
+      "subtotal": 194.49,
+      "tax_amount": 38.9,
+      "total_amount": 233.39,
+      "po_number": "",
+      "department_id": "DEP-004",
+      "status": "approved",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-09-25T15:30:20Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-09-21T08:30:20Z",
+      "source": "erp_feed",
+      "idempotency_key": "a7e39061b11657d4"
+    },
+    {
+      "record_id": "ERP-INV-000082",
+      "invoice_id": "INV-0095",
+      "vendor_id": "VND-022",
+      "invoice_number": "STE-2609-0095",
+      "invoice_date": "2026-09-27",
+      "due_date": "2026-10-12",
+      "currency": "GBP",
+      "subtotal": 79.37,
+      "tax_amount": 15.87,
+      "total_amount": 95.24,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "approved",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-008",
+        "decided_at": "2026-09-30T17:00:00Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-09-27T12:52:29Z",
+      "source": "erp_feed",
+      "idempotency_key": "fafa7b55e07c61c7"
+    },
+    {
+      "record_id": "ERP-INV-000083",
+      "invoice_id": "INV-0096",
+      "vendor_id": "VND-011",
+      "invoice_number": "HAR-2606-0096",
+      "invoice_date": "2026-06-06",
+      "due_date": "2026-07-06",
+      "currency": "GBP",
+      "subtotal": 146.62,
+      "tax_amount": 29.32,
+      "total_amount": 175.94,
+      "po_number": "",
+      "department_id": "DEP-005",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-06-10T15:57:18Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000083",
+        "authorized_by": "EMP-001",
+        "paid_at": "2026-06-30T15:57:18Z",
+        "reference": "SIM-REF-000083"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-06-08T12:57:18Z",
+      "source": "erp_feed",
+      "idempotency_key": "c0c6a19ae244affd"
+    },
+    {
+      "record_id": "ERP-INV-000084",
+      "invoice_id": "INV-0097",
+      "vendor_id": "VND-010",
+      "invoice_number": "GRA-2607-0097",
+      "invoice_date": "2026-07-28",
+      "due_date": "2026-08-27",
+      "currency": "USD",
+      "subtotal": 313.1,
+      "tax_amount": 25.05,
+      "total_amount": 338.15,
+      "po_number": "",
+      "department_id": "DEP-003",
+      "status": "overdue",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-009",
+        "decided_at": "2026-08-02T18:07:45Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-07-28T15:07:45Z",
+      "source": "erp_feed",
+      "idempotency_key": "c41d9b5c965582eb"
+    },
+    {
+      "record_id": "ERP-INV-000085",
+      "invoice_id": "INV-0098",
+      "vendor_id": "VND-019",
+      "invoice_number": "PIN-2608-0098",
+      "invoice_date": "2026-08-01",
+      "due_date": "2026-08-31",
+      "currency": "GBP",
+      "subtotal": 244.09,
+      "tax_amount": 48.82,
+      "total_amount": 292.91,
+      "po_number": "",
+      "department_id": "DEP-007",
+      "status": "overdue",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-08-09T15:14:22Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-08-03T09:14:22Z",
+      "source": "erp_feed",
+      "idempotency_key": "5919a0749a4d788a"
+    },
+    {
+      "record_id": "ERP-INV-000086",
+      "invoice_id": "INV-0099",
+      "vendor_id": "VND-016",
+      "invoice_number": "MAP-2602-0099",
+      "invoice_date": "2026-02-20",
+      "due_date": "2026-03-07",
+      "currency": "CAD",
+      "subtotal": 96.33,
+      "tax_amount": 12.52,
+      "total_amount": 108.85,
+      "po_number": "",
+      "department_id": "DEP-005",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-02-24T16:54:40Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000086",
+        "authorized_by": "EMP-002",
+        "paid_at": "2026-03-18T16:54:40Z",
+        "reference": "SIM-REF-000086"
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-02-21T08:54:40Z",
+      "source": "erp_feed",
+      "idempotency_key": "91eb47ee5f3b0768"
+    },
+    {
+      "record_id": "ERP-INV-000087",
+      "invoice_id": "INV-0100",
+      "vendor_id": "VND-010",
+      "invoice_number": "GRA-2607-0100",
+      "invoice_date": "2026-07-05",
+      "due_date": "2026-08-04",
+      "currency": "USD",
+      "subtotal": 254.8,
+      "tax_amount": 20.38,
+      "total_amount": 275.18,
+      "po_number": "",
+      "department_id": "DEP-006",
+      "status": "paid",
+      "approval": {
+        "required_tier": 1,
+        "required_role": "manager",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-07-08T15:50:24Z"
+      },
+      "payment": {
+        "status": "paid",
+        "payment_id": "SIM-PAY-000087",
+        "authorized_by": "EMP-001",
+        "paid_at": "2026-07-22T15:50:24Z",
+        "reference": "SIM-REF-000087"
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-07-06T12:50:24Z",
+      "source": "erp_feed",
+      "idempotency_key": "be85e60dc58a2ce0"
+    },
+    {
+      "record_id": "ERP-INV-000088",
+      "invoice_id": "INV-0106",
+      "vendor_id": "VND-021",
+      "invoice_number": "RED-2609-0106",
+      "invoice_date": "2026-09-10",
+      "due_date": "2026-10-10",
+      "currency": "USD",
+      "subtotal": 62600.0,
+      "tax_amount": 5008.0,
+      "total_amount": 67608.0,
+      "po_number": "PO-2026-0034",
+      "department_id": "DEP-006",
+      "status": "pending_approval",
+      "approval": {
+        "required_tier": 4,
+        "required_role": "cfo",
+        "status": "pending",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-09-10T13:02:06Z",
+      "source": "erp_feed",
+      "idempotency_key": "4d3ab416d017b594"
+    },
+    {
+      "record_id": "ERP-INV-000089",
+      "invoice_id": "INV-0107",
+      "vendor_id": "VND-021",
+      "invoice_number": "RED-2609-0107",
+      "invoice_date": "2026-09-22",
+      "due_date": "2026-10-22",
+      "currency": "USD",
+      "subtotal": 6300.0,
+      "tax_amount": 504.0,
+      "total_amount": 6804.0,
+      "po_number": "PO-2026-0035",
+      "department_id": "DEP-006",
+      "status": "pending_approval",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "pending",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-09-24T07:30:37Z",
+      "source": "erp_feed",
+      "idempotency_key": "4a4344ce9bdca06a"
+    },
+    {
+      "record_id": "ERP-INV-000090",
+      "invoice_id": "INV-0112",
+      "vendor_id": "VND-009",
+      "invoice_number": "FEN-2609-0112",
+      "invoice_date": "2026-09-03",
+      "due_date": "2026-10-03",
+      "currency": "GBP",
+      "subtotal": 4825.0,
+      "tax_amount": 965.0,
+      "total_amount": 5790.0,
+      "po_number": "PO-2026-0039",
+      "department_id": "DEP-002",
+      "status": "approved",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-09-07T13:17:42Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-09-03T10:17:42Z",
+      "source": "erp_feed",
+      "idempotency_key": "ec460066fd0c6f64"
+    },
+    {
+      "record_id": "ERP-INV-000091",
+      "invoice_id": "INV-0113",
+      "vendor_id": "VND-011",
+      "invoice_number": "HAR-2609-0113",
+      "invoice_date": "2026-09-04",
+      "due_date": "2026-10-04",
+      "currency": "GBP",
+      "subtotal": 4530.0,
+      "tax_amount": 906.0,
+      "total_amount": 5436.0,
+      "po_number": "PO-2026-0040",
+      "department_id": "DEP-001",
+      "status": "approved",
+      "approval": {
+        "required_tier": 3,
+        "required_role": "finance_manager",
+        "status": "approved",
+        "approver_id": "EMP-001",
+        "decided_at": "2026-09-12T22:06:15Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-09-06T17:06:15Z",
+      "source": "erp_feed",
+      "idempotency_key": "a2ab0d501b8d4699"
+    },
+    {
+      "record_id": "ERP-INV-000092",
+      "invoice_id": "INV-0115",
+      "vendor_id": "VND-014",
+      "invoice_number": "10442",
+      "invoice_date": "2026-09-02",
+      "due_date": "2026-10-17",
+      "currency": "USD",
+      "subtotal": 2810.0,
+      "tax_amount": 224.8,
+      "total_amount": 3034.8,
+      "po_number": "PO-2026-0041",
+      "department_id": "DEP-003",
+      "status": "approved",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-09-06T00:44:29Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-09-04T17:44:29Z",
+      "source": "erp_feed",
+      "idempotency_key": "bde8dca39591a1ba"
+    },
+    {
+      "record_id": "ERP-INV-000093",
+      "invoice_id": "INV-0117",
+      "vendor_id": "VND-019",
+      "invoice_number": "PIN-2609-0117",
+      "invoice_date": "2026-09-07",
+      "due_date": "2026-10-07",
+      "currency": "GBP",
+      "subtotal": 3570.0,
+      "tax_amount": 714.0,
+      "total_amount": 4284.0,
+      "po_number": "PO-2026-0043",
+      "department_id": "DEP-007",
+      "status": "approved",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-09-13T22:01:14Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-09-08T14:01:14Z",
+      "source": "erp_feed",
+      "idempotency_key": "9bd96d1e08c7dd36"
+    },
+    {
+      "record_id": "ERP-INV-000094",
+      "invoice_id": "INV-0132",
+      "vendor_id": "VND-003",
+      "invoice_number": "BRI-2609-0132",
+      "invoice_date": "2026-09-01",
+      "due_date": "2026-10-01",
+      "currency": "USD",
+      "subtotal": 3960.0,
+      "tax_amount": 316.8,
+      "total_amount": 4276.8,
+      "po_number": "PO-2026-0057",
+      "department_id": "DEP-002",
+      "status": "pending_approval",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "pending",
+        "approver_id": "",
+        "decided_at": ""
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-004",
+      "created_at": "2026-09-03T10:28:39Z",
+      "source": "erp_feed",
+      "idempotency_key": "9d80a0aa4ada7bf1"
+    },
+    {
+      "record_id": "ERP-INV-000095",
+      "invoice_id": "INV-0133",
+      "vendor_id": "VND-007",
+      "invoice_number": "DEL-2609-0133",
+      "invoice_date": "2026-09-05",
+      "due_date": "2026-10-05",
+      "currency": "USD",
+      "subtotal": 2960.0,
+      "tax_amount": 236.8,
+      "total_amount": 3169.8,
+      "po_number": "PO-2026-0058",
+      "department_id": "DEP-003",
+      "status": "approved",
+      "approval": {
+        "required_tier": 2,
+        "required_role": "director",
+        "status": "approved",
+        "approver_id": "EMP-002",
+        "decided_at": "2026-09-11T16:03:34Z"
+      },
+      "payment": {
+        "status": "not_scheduled",
+        "payment_id": "",
+        "authorized_by": "",
+        "paid_at": "",
+        "reference": ""
+      },
+      "notes": "",
+      "created_by": "EMP-003",
+      "created_at": "2026-09-07T11:03:34Z",
+      "source": "erp_feed",
+      "idempotency_key": "337afe77c874752c"
+    }
+  ],
+  "audit_log": [
+    {
+      "ts": "2026-01-19T08:04:34Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000060",
+      "detail": "",
+      "event_id": "EVT-000001"
+    },
+    {
+      "ts": "2026-01-25T13:04:34Z",
+      "actor": "EMP-006",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000060",
+      "detail": "",
+      "event_id": "EVT-000002"
+    },
+    {
+      "ts": "2026-01-26T12:23:47Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000055",
+      "detail": "",
+      "event_id": "EVT-000003"
+    },
+    {
+      "ts": "2026-01-27T14:49:21Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000042",
+      "detail": "",
+      "event_id": "EVT-000004"
+    },
+    {
+      "ts": "2026-01-28T13:04:34Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000060",
+      "detail": "simulated",
+      "event_id": "EVT-000005"
+    },
+    {
+      "ts": "2026-01-28T19:23:47Z",
+      "actor": "EMP-008",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000055",
+      "detail": "",
+      "event_id": "EVT-000006"
+    },
+    {
+      "ts": "2026-01-29T12:25:27Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000048",
+      "detail": "",
+      "event_id": "EVT-000007"
+    },
+    {
+      "ts": "2026-01-30T19:25:27Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000048",
+      "detail": "",
+      "event_id": "EVT-000008"
+    },
+    {
+      "ts": "2026-01-30T22:49:21Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000042",
+      "detail": "",
+      "event_id": "EVT-000009"
+    },
+    {
+      "ts": "2026-02-05T19:23:47Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000055",
+      "detail": "simulated",
+      "event_id": "EVT-000010"
+    },
+    {
+      "ts": "2026-02-14T19:25:27Z",
+      "actor": "EMP-001",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000048",
+      "detail": "simulated",
+      "event_id": "EVT-000011"
+    },
+    {
+      "ts": "2026-02-16T22:49:21Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000042",
+      "detail": "simulated",
+      "event_id": "EVT-000012"
+    },
+    {
+      "ts": "2026-02-21T08:54:40Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000086",
+      "detail": "",
+      "event_id": "EVT-000013"
+    },
+    {
+      "ts": "2026-02-24T07:07:37Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000050",
+      "detail": "",
+      "event_id": "EVT-000014"
+    },
+    {
+      "ts": "2026-02-24T16:54:40Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000086",
+      "detail": "",
+      "event_id": "EVT-000015"
+    },
+    {
+      "ts": "2026-03-01T13:07:37Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000050",
+      "detail": "",
+      "event_id": "EVT-000016"
+    },
+    {
+      "ts": "2026-03-02T12:47:34Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000016",
+      "detail": "",
+      "event_id": "EVT-000017"
+    },
+    {
+      "ts": "2026-03-03T13:07:37Z",
+      "actor": "EMP-001",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000050",
+      "detail": "simulated",
+      "event_id": "EVT-000018"
+    },
+    {
+      "ts": "2026-03-04T20:47:34Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000016",
+      "detail": "",
+      "event_id": "EVT-000019"
+    },
+    {
+      "ts": "2026-03-06T15:33:59Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000064",
+      "detail": "",
+      "event_id": "EVT-000020"
+    },
+    {
+      "ts": "2026-03-07T09:06:04Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000063",
+      "detail": "",
+      "event_id": "EVT-000021"
+    },
+    {
+      "ts": "2026-03-07T10:29:16Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000010",
+      "detail": "",
+      "event_id": "EVT-000022"
+    },
+    {
+      "ts": "2026-03-09T11:46:25Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000035",
+      "detail": "",
+      "event_id": "EVT-000023"
+    },
+    {
+      "ts": "2026-03-09T23:33:59Z",
+      "actor": "EMP-016",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000064",
+      "detail": "",
+      "event_id": "EVT-000024"
+    },
+    {
+      "ts": "2026-03-10T10:00:35Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000006",
+      "detail": "",
+      "event_id": "EVT-000025"
+    },
+    {
+      "ts": "2026-03-10T16:46:25Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000035",
+      "detail": "",
+      "event_id": "EVT-000026"
+    },
+    {
+      "ts": "2026-03-11T20:47:34Z",
+      "actor": "EMP-001",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000016",
+      "detail": "simulated",
+      "event_id": "EVT-000027"
+    },
+    {
+      "ts": "2026-03-12T13:37:54Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000037",
+      "detail": "",
+      "event_id": "EVT-000028"
+    },
+    {
+      "ts": "2026-03-13T13:06:04Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000063",
+      "detail": "",
+      "event_id": "EVT-000029"
+    },
+    {
+      "ts": "2026-03-13T14:00:35Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000006",
+      "detail": "",
+      "event_id": "EVT-000030"
+    },
+    {
+      "ts": "2026-03-13T15:29:16Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000010",
+      "detail": "",
+      "event_id": "EVT-000031"
+    },
+    {
+      "ts": "2026-03-14T19:37:54Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000037",
+      "detail": "",
+      "event_id": "EVT-000032"
+    },
+    {
+      "ts": "2026-03-17T14:00:35Z",
+      "actor": "EMP-001",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000006",
+      "detail": "simulated",
+      "event_id": "EVT-000033"
+    },
+    {
+      "ts": "2026-03-17T15:29:16Z",
+      "actor": "EMP-001",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000010",
+      "detail": "simulated",
+      "event_id": "EVT-000034"
+    },
+    {
+      "ts": "2026-03-18T16:54:40Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000086",
+      "detail": "simulated",
+      "event_id": "EVT-000035"
+    },
+    {
+      "ts": "2026-03-22T23:33:59Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000064",
+      "detail": "simulated",
+      "event_id": "EVT-000036"
+    },
+    {
+      "ts": "2026-03-28T13:06:04Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000063",
+      "detail": "simulated",
+      "event_id": "EVT-000037"
+    },
+    {
+      "ts": "2026-03-29T16:46:25Z",
+      "actor": "EMP-001",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000035",
+      "detail": "simulated",
+      "event_id": "EVT-000038"
+    },
+    {
+      "ts": "2026-03-30T19:37:54Z",
+      "actor": "EMP-001",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000037",
+      "detail": "simulated",
+      "event_id": "EVT-000039"
+    },
+    {
+      "ts": "2026-04-06T08:08:26Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000075",
+      "detail": "",
+      "event_id": "EVT-000040"
+    },
+    {
+      "ts": "2026-04-09T15:08:26Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000075",
+      "detail": "",
+      "event_id": "EVT-000041"
+    },
+    {
+      "ts": "2026-04-10T15:08:26Z",
+      "actor": "EMP-001",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000075",
+      "detail": "simulated",
+      "event_id": "EVT-000042"
+    },
+    {
+      "ts": "2026-04-16T08:17:09Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000049",
+      "detail": "",
+      "event_id": "EVT-000043"
+    },
+    {
+      "ts": "2026-04-17T13:17:09Z",
+      "actor": "EMP-012",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000049",
+      "detail": "",
+      "event_id": "EVT-000044"
+    },
+    {
+      "ts": "2026-04-27T13:17:09Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000049",
+      "detail": "simulated",
+      "event_id": "EVT-000045"
+    },
+    {
+      "ts": "2026-04-27T16:44:57Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000076",
+      "detail": "",
+      "event_id": "EVT-000046"
+    },
+    {
+      "ts": "2026-04-29T07:54:45Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000017",
+      "detail": "",
+      "event_id": "EVT-000047"
+    },
+    {
+      "ts": "2026-04-30T08:54:45Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000017",
+      "detail": "",
+      "event_id": "EVT-000048"
+    },
+    {
+      "ts": "2026-05-01T08:54:45Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000017",
+      "detail": "simulated",
+      "event_id": "EVT-000049"
+    },
+    {
+      "ts": "2026-05-02T10:37:49Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000008",
+      "detail": "",
+      "event_id": "EVT-000050"
+    },
+    {
+      "ts": "2026-05-02T19:44:57Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000076",
+      "detail": "",
+      "event_id": "EVT-000051"
+    },
+    {
+      "ts": "2026-05-07T16:37:49Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000008",
+      "detail": "",
+      "event_id": "EVT-000052"
+    },
+    {
+      "ts": "2026-05-10T11:09:27Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000054",
+      "detail": "",
+      "event_id": "EVT-000053"
+    },
+    {
+      "ts": "2026-05-11T14:09:27Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000054",
+      "detail": "",
+      "event_id": "EVT-000054"
+    },
+    {
+      "ts": "2026-05-16T14:51:16Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000062",
+      "detail": "",
+      "event_id": "EVT-000055"
+    },
+    {
+      "ts": "2026-05-20T16:51:16Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000062",
+      "detail": "",
+      "event_id": "EVT-000056"
+    },
+    {
+      "ts": "2026-05-22T14:32:35Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000007",
+      "detail": "",
+      "event_id": "EVT-000057"
+    },
+    {
+      "ts": "2026-05-22T19:44:57Z",
+      "actor": "EMP-001",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000076",
+      "detail": "simulated",
+      "event_id": "EVT-000058"
+    },
+    {
+      "ts": "2026-05-25T16:52:48Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000061",
+      "detail": "",
+      "event_id": "EVT-000059"
+    },
+    {
+      "ts": "2026-05-26T16:37:49Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000008",
+      "detail": "simulated",
+      "event_id": "EVT-000060"
+    },
+    {
+      "ts": "2026-05-27T17:52:48Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000061",
+      "detail": "",
+      "event_id": "EVT-000061"
+    },
+    {
+      "ts": "2026-05-27T22:32:35Z",
+      "actor": "EMP-008",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000007",
+      "detail": "",
+      "event_id": "EVT-000062"
+    },
+    {
+      "ts": "2026-05-28T14:09:27Z",
+      "actor": "EMP-001",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000054",
+      "detail": "simulated",
+      "event_id": "EVT-000063"
+    },
+    {
+      "ts": "2026-05-28T17:52:48Z",
+      "actor": "EMP-001",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000061",
+      "detail": "simulated",
+      "event_id": "EVT-000064"
+    },
+    {
+      "ts": "2026-06-01T15:50:35Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000041",
+      "detail": "",
+      "event_id": "EVT-000065"
+    },
+    {
+      "ts": "2026-06-02T23:50:35Z",
+      "actor": "EMP-012",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000041",
+      "detail": "",
+      "event_id": "EVT-000066"
+    },
+    {
+      "ts": "2026-06-03T13:53:01Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000023",
+      "detail": "",
+      "event_id": "EVT-000067"
+    },
+    {
+      "ts": "2026-06-04T11:11:36Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000058",
+      "detail": "",
+      "event_id": "EVT-000068"
+    },
+    {
+      "ts": "2026-06-04T18:53:01Z",
+      "actor": "EMP-012",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000023",
+      "detail": "",
+      "event_id": "EVT-000069"
+    },
+    {
+      "ts": "2026-06-07T15:35:11Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000027",
+      "detail": "",
+      "event_id": "EVT-000070"
+    },
+    {
+      "ts": "2026-06-07T16:07:30Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000030",
+      "detail": "",
+      "event_id": "EVT-000071"
+    },
+    {
+      "ts": "2026-06-07T16:47:21Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000001",
+      "detail": "",
+      "event_id": "EVT-000072"
+    },
+    {
+      "ts": "2026-06-08T12:57:18Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000083",
+      "detail": "",
+      "event_id": "EVT-000073"
+    },
+    {
+      "ts": "2026-06-08T21:35:11Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000027",
+      "detail": "",
+      "event_id": "EVT-000074"
+    },
+    {
+      "ts": "2026-06-09T15:47:10Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000025",
+      "detail": "",
+      "event_id": "EVT-000075"
+    },
+    {
+      "ts": "2026-06-09T23:47:21Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000001",
+      "detail": "",
+      "event_id": "EVT-000076"
+    },
+    {
+      "ts": "2026-06-10T15:57:18Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000083",
+      "detail": "",
+      "event_id": "EVT-000077"
+    },
+    {
+      "ts": "2026-06-10T16:51:16Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000062",
+      "detail": "simulated",
+      "event_id": "EVT-000078"
+    },
+    {
+      "ts": "2026-06-12T15:43:25Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000065",
+      "detail": "",
+      "event_id": "EVT-000079"
+    },
+    {
+      "ts": "2026-06-12T23:47:10Z",
+      "actor": "EMP-009",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000025",
+      "detail": "",
+      "event_id": "EVT-000080"
+    },
+    {
+      "ts": "2026-06-13T22:07:30Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000030",
+      "detail": "",
+      "event_id": "EVT-000081"
+    },
+    {
+      "ts": "2026-06-13T23:47:10Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000025",
+      "detail": "simulated",
+      "event_id": "EVT-000082"
+    },
+    {
+      "ts": "2026-06-14T19:43:25Z",
+      "actor": "EMP-009",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000065",
+      "detail": "",
+      "event_id": "EVT-000083"
+    },
+    {
+      "ts": "2026-06-16T09:19:17Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000033",
+      "detail": "",
+      "event_id": "EVT-000084"
+    },
+    {
+      "ts": "2026-06-17T11:19:17Z",
+      "actor": "EMP-017",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000033",
+      "detail": "",
+      "event_id": "EVT-000085"
+    },
+    {
+      "ts": "2026-06-17T12:51:40Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000052",
+      "detail": "",
+      "event_id": "EVT-000086"
+    },
+    {
+      "ts": "2026-06-17T22:07:30Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000030",
+      "detail": "simulated",
+      "event_id": "EVT-000087"
+    },
+    {
+      "ts": "2026-06-21T22:32:35Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000007",
+      "detail": "simulated",
+      "event_id": "EVT-000088"
+    },
+    {
+      "ts": "2026-06-21T23:50:35Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000041",
+      "detail": "simulated",
+      "event_id": "EVT-000089"
+    },
+    {
+      "ts": "2026-06-24T08:49:04Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000013",
+      "detail": "",
+      "event_id": "EVT-000090"
+    },
+    {
+      "ts": "2026-06-24T18:53:01Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000023",
+      "detail": "simulated",
+      "event_id": "EVT-000091"
+    },
+    {
+      "ts": "2026-06-25T09:37:30Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000070",
+      "detail": "",
+      "event_id": "EVT-000092"
+    },
+    {
+      "ts": "2026-06-25T17:35:43Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000059",
+      "detail": "",
+      "event_id": "EVT-000093"
+    },
+    {
+      "ts": "2026-06-26T11:19:17Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000033",
+      "detail": "simulated",
+      "event_id": "EVT-000094"
+    },
+    {
+      "ts": "2026-06-26T16:57:29Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000047",
+      "detail": "",
+      "event_id": "EVT-000095"
+    },
+    {
+      "ts": "2026-06-27T21:57:29Z",
+      "actor": "EMP-009",
+      "action": "approval_rejected",
+      "record_id": "ERP-INV-000047",
+      "detail": "",
+      "event_id": "EVT-000096"
+    },
+    {
+      "ts": "2026-06-28T01:35:43Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000059",
+      "detail": "",
+      "event_id": "EVT-000097"
+    },
+    {
+      "ts": "2026-06-28T11:49:04Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000013",
+      "detail": "",
+      "event_id": "EVT-000098"
+    },
+    {
+      "ts": "2026-06-29T17:53:41Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000009",
+      "detail": "",
+      "event_id": "EVT-000099"
+    },
+    {
+      "ts": "2026-06-30T10:37:30Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000070",
+      "detail": "",
+      "event_id": "EVT-000100"
+    },
+    {
+      "ts": "2026-06-30T15:57:18Z",
+      "actor": "EMP-001",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000083",
+      "detail": "simulated",
+      "event_id": "EVT-000101"
+    },
+    {
+      "ts": "2026-07-02T23:47:21Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000001",
+      "detail": "simulated",
+      "event_id": "EVT-000102"
+    },
+    {
+      "ts": "2026-07-03T17:09:35Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000057",
+      "detail": "",
+      "event_id": "EVT-000103"
+    },
+    {
+      "ts": "2026-07-03T21:35:11Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000027",
+      "detail": "simulated",
+      "event_id": "EVT-000104"
+    },
+    {
+      "ts": "2026-07-04T12:54:05Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000002",
+      "detail": "",
+      "event_id": "EVT-000105"
+    },
+    {
+      "ts": "2026-07-05T10:37:30Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000070",
+      "detail": "simulated",
+      "event_id": "EVT-000106"
+    },
+    {
+      "ts": "2026-07-05T11:49:04Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000013",
+      "detail": "simulated",
+      "event_id": "EVT-000107"
+    },
+    {
+      "ts": "2026-07-05T14:54:05Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000002",
+      "detail": "",
+      "event_id": "EVT-000108"
+    },
+    {
+      "ts": "2026-07-06T12:50:24Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000087",
+      "detail": "",
+      "event_id": "EVT-000109"
+    },
+    {
+      "ts": "2026-07-07T19:43:25Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000065",
+      "detail": "simulated",
+      "event_id": "EVT-000110"
+    },
+    {
+      "ts": "2026-07-08T15:50:24Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000087",
+      "detail": "",
+      "event_id": "EVT-000111"
+    },
+    {
+      "ts": "2026-07-15T10:06:20Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000071",
+      "detail": "",
+      "event_id": "EVT-000112"
+    },
+    {
+      "ts": "2026-07-15T17:05:26Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000024",
+      "detail": "",
+      "event_id": "EVT-000113"
+    },
+    {
+      "ts": "2026-07-16T14:54:05Z",
+      "actor": "EMP-001",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000002",
+      "detail": "simulated",
+      "event_id": "EVT-000114"
+    },
+    {
+      "ts": "2026-07-17T18:06:20Z",
+      "actor": "EMP-002",
+      "action": "approval_rejected",
+      "record_id": "ERP-INV-000071",
+      "detail": "",
+      "event_id": "EVT-000115"
+    },
+    {
+      "ts": "2026-07-18T01:35:43Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000059",
+      "detail": "simulated",
+      "event_id": "EVT-000116"
+    },
+    {
+      "ts": "2026-07-18T08:21:41Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000043",
+      "detail": "",
+      "event_id": "EVT-000117"
+    },
+    {
+      "ts": "2026-07-18T08:23:51Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000014",
+      "detail": "",
+      "event_id": "EVT-000118"
+    },
+    {
+      "ts": "2026-07-18T17:22:25Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000045",
+      "detail": "",
+      "event_id": "EVT-000119"
+    },
+    {
+      "ts": "2026-07-19T15:37:48Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000018",
+      "detail": "",
+      "event_id": "EVT-000120"
+    },
+    {
+      "ts": "2026-07-20T22:37:48Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000018",
+      "detail": "",
+      "event_id": "EVT-000121"
+    },
+    {
+      "ts": "2026-07-21T07:41:52Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000072",
+      "detail": "",
+      "event_id": "EVT-000122"
+    },
+    {
+      "ts": "2026-07-21T11:21:41Z",
+      "actor": "EMP-012",
+      "action": "approval_rejected",
+      "record_id": "ERP-INV-000043",
+      "detail": "",
+      "event_id": "EVT-000123"
+    },
+    {
+      "ts": "2026-07-22T15:50:24Z",
+      "actor": "EMP-001",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000087",
+      "detail": "simulated",
+      "event_id": "EVT-000124"
+    },
+    {
+      "ts": "2026-07-24T10:23:51Z",
+      "actor": "EMP-008",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000014",
+      "detail": "",
+      "event_id": "EVT-000125"
+    },
+    {
+      "ts": "2026-07-24T12:19:55Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000039",
+      "detail": "",
+      "event_id": "EVT-000126"
+    },
+    {
+      "ts": "2026-07-25T07:39:09Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000026",
+      "detail": "",
+      "event_id": "EVT-000127"
+    },
+    {
+      "ts": "2026-07-27T14:10:37Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000056",
+      "detail": "",
+      "event_id": "EVT-000128"
+    },
+    {
+      "ts": "2026-07-28T15:07:45Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000084",
+      "detail": "",
+      "event_id": "EVT-000129"
+    },
+    {
+      "ts": "2026-07-30T10:18:17Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000079",
+      "detail": "",
+      "event_id": "EVT-000130"
+    },
+    {
+      "ts": "2026-07-30T22:10:37Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000056",
+      "detail": "",
+      "event_id": "EVT-000131"
+    },
+    {
+      "ts": "2026-07-31T09:18:19Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000051",
+      "detail": "",
+      "event_id": "EVT-000132"
+    },
+    {
+      "ts": "2026-08-02T18:07:45Z",
+      "actor": "EMP-009",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000084",
+      "detail": "",
+      "event_id": "EVT-000133"
+    },
+    {
+      "ts": "2026-08-03T09:14:22Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000085",
+      "detail": "",
+      "event_id": "EVT-000134"
+    },
+    {
+      "ts": "2026-08-04T09:25:00Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000028",
+      "detail": "",
+      "event_id": "EVT-000135"
+    },
+    {
+      "ts": "2026-08-07T11:37:56Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000012",
+      "detail": "",
+      "event_id": "EVT-000136"
+    },
+    {
+      "ts": "2026-08-09T15:13:07Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000021",
+      "detail": "",
+      "event_id": "EVT-000137"
+    },
+    {
+      "ts": "2026-08-09T15:14:22Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000085",
+      "detail": "",
+      "event_id": "EVT-000138"
+    },
+    {
+      "ts": "2026-08-10T11:25:00Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000028",
+      "detail": "",
+      "event_id": "EVT-000139"
+    },
+    {
+      "ts": "2026-08-13T18:37:56Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000012",
+      "detail": "",
+      "event_id": "EVT-000140"
+    },
+    {
+      "ts": "2026-08-14T08:07:14Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000044",
+      "detail": "",
+      "event_id": "EVT-000141"
+    },
+    {
+      "ts": "2026-08-14T13:31:48Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000046",
+      "detail": "",
+      "event_id": "EVT-000142"
+    },
+    {
+      "ts": "2026-08-14T17:13:07Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000021",
+      "detail": "",
+      "event_id": "EVT-000143"
+    },
+    {
+      "ts": "2026-08-17T15:07:14Z",
+      "actor": "EMP-009",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000044",
+      "detail": "",
+      "event_id": "EVT-000144"
+    },
+    {
+      "ts": "2026-08-19T11:38:30Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000003",
+      "detail": "",
+      "event_id": "EVT-000145"
+    },
+    {
+      "ts": "2026-08-22T15:30:07Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000011",
+      "detail": "",
+      "event_id": "EVT-000146"
+    },
+    {
+      "ts": "2026-08-24T09:53:35Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000068",
+      "detail": "",
+      "event_id": "EVT-000147"
+    },
+    {
+      "ts": "2026-08-24T12:38:30Z",
+      "actor": "EMP-005",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000003",
+      "detail": "",
+      "event_id": "EVT-000148"
+    },
+    {
+      "ts": "2026-08-24T20:30:07Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000011",
+      "detail": "",
+      "event_id": "EVT-000149"
+    },
+    {
+      "ts": "2026-08-25T14:53:35Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000068",
+      "detail": "",
+      "event_id": "EVT-000150"
+    },
+    {
+      "ts": "2026-08-25T15:16:16Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000077",
+      "detail": "",
+      "event_id": "EVT-000151"
+    },
+    {
+      "ts": "2026-08-26T17:13:07Z",
+      "actor": "EMP-002",
+      "action": "payment_paid",
+      "record_id": "ERP-INV-000021",
+      "detail": "simulated",
+      "event_id": "EVT-000152"
+    },
+    {
+      "ts": "2026-08-26T17:45:16Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000029",
+      "detail": "",
+      "event_id": "EVT-000153"
+    },
+    {
+      "ts": "2026-08-27T15:21:29Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000078",
+      "detail": "",
+      "event_id": "EVT-000154"
+    },
+    {
+      "ts": "2026-08-27T15:48:29Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000069",
+      "detail": "",
+      "event_id": "EVT-000155"
+    },
+    {
+      "ts": "2026-08-28T20:21:29Z",
+      "actor": "EMP-012",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000078",
+      "detail": "",
+      "event_id": "EVT-000156"
+    },
+    {
+      "ts": "2026-08-28T20:48:29Z",
+      "actor": "EMP-016",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000069",
+      "detail": "",
+      "event_id": "EVT-000157"
+    },
+    {
+      "ts": "2026-08-31T20:16:16Z",
+      "actor": "EMP-009",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000077",
+      "detail": "",
+      "event_id": "EVT-000158"
+    },
+    {
+      "ts": "2026-09-03T10:17:42Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000090",
+      "detail": "",
+      "event_id": "EVT-000159"
+    },
+    {
+      "ts": "2026-09-03T10:28:39Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000094",
+      "detail": "",
+      "event_id": "EVT-000160"
+    },
+    {
+      "ts": "2026-09-04T17:44:29Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000092",
+      "detail": "",
+      "event_id": "EVT-000161"
+    },
+    {
+      "ts": "2026-09-05T14:28:39Z",
+      "actor": "EMP-005",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000094",
+      "detail": "",
+      "event_id": "EVT-000162"
+    },
+    {
+      "ts": "2026-09-06T00:44:29Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000092",
+      "detail": "",
+      "event_id": "EVT-000163"
+    },
+    {
+      "ts": "2026-09-06T08:45:24Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000067",
+      "detail": "",
+      "event_id": "EVT-000164"
+    },
+    {
+      "ts": "2026-09-06T17:06:15Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000091",
+      "detail": "",
+      "event_id": "EVT-000165"
+    },
+    {
+      "ts": "2026-09-07T11:03:34Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000095",
+      "detail": "",
+      "event_id": "EVT-000166"
+    },
+    {
+      "ts": "2026-09-07T13:17:42Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000090",
+      "detail": "",
+      "event_id": "EVT-000167"
+    },
+    {
+      "ts": "2026-09-08T14:01:14Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000093",
+      "detail": "",
+      "event_id": "EVT-000168"
+    },
+    {
+      "ts": "2026-09-09T11:08:52Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000074",
+      "detail": "",
+      "event_id": "EVT-000169"
+    },
+    {
+      "ts": "2026-09-10T08:43:43Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000005",
+      "detail": "",
+      "event_id": "EVT-000170"
+    },
+    {
+      "ts": "2026-09-10T13:02:06Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000088",
+      "detail": "",
+      "event_id": "EVT-000171"
+    },
+    {
+      "ts": "2026-09-11T12:37:30Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000066",
+      "detail": "",
+      "event_id": "EVT-000172"
+    },
+    {
+      "ts": "2026-09-11T15:08:52Z",
+      "actor": "EMP-016",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000074",
+      "detail": "",
+      "event_id": "EVT-000173"
+    },
+    {
+      "ts": "2026-09-11T16:03:34Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000095",
+      "detail": "",
+      "event_id": "EVT-000174"
+    },
+    {
+      "ts": "2026-09-12T09:22:08Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000004",
+      "detail": "",
+      "event_id": "EVT-000175"
+    },
+    {
+      "ts": "2026-09-12T13:53:39Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000020",
+      "detail": "",
+      "event_id": "EVT-000176"
+    },
+    {
+      "ts": "2026-09-12T22:06:15Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000091",
+      "detail": "",
+      "event_id": "EVT-000177"
+    },
+    {
+      "ts": "2026-09-13T22:01:14Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000093",
+      "detail": "",
+      "event_id": "EVT-000178"
+    },
+    {
+      "ts": "2026-09-15T07:44:57Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000073",
+      "detail": "",
+      "event_id": "EVT-000179"
+    },
+    {
+      "ts": "2026-09-17T10:00:35Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000032",
+      "detail": "",
+      "event_id": "EVT-000180"
+    },
+    {
+      "ts": "2026-09-17T13:37:30Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000066",
+      "detail": "",
+      "event_id": "EVT-000181"
+    },
+    {
+      "ts": "2026-09-19T09:31:37Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000053",
+      "detail": "",
+      "event_id": "EVT-000182"
+    },
+    {
+      "ts": "2026-09-21T08:30:20Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000081",
+      "detail": "",
+      "event_id": "EVT-000183"
+    },
+    {
+      "ts": "2026-09-21T09:58:18Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000031",
+      "detail": "",
+      "event_id": "EVT-000184"
+    },
+    {
+      "ts": "2026-09-22T10:30:38Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000022",
+      "detail": "",
+      "event_id": "EVT-000185"
+    },
+    {
+      "ts": "2026-09-22T13:10:04Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000034",
+      "detail": "",
+      "event_id": "EVT-000186"
+    },
+    {
+      "ts": "2026-09-23T10:48:37Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000036",
+      "detail": "",
+      "event_id": "EVT-000187"
+    },
+    {
+      "ts": "2026-09-24T07:30:37Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000089",
+      "detail": "",
+      "event_id": "EVT-000188"
+    },
+    {
+      "ts": "2026-09-24T10:26:51Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000080",
+      "detail": "",
+      "event_id": "EVT-000189"
+    },
+    {
+      "ts": "2026-09-24T16:58:18Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000031",
+      "detail": "",
+      "event_id": "EVT-000190"
+    },
+    {
+      "ts": "2026-09-25T07:55:46Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000015",
+      "detail": "",
+      "event_id": "EVT-000191"
+    },
+    {
+      "ts": "2026-09-25T15:30:20Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000081",
+      "detail": "",
+      "event_id": "EVT-000192"
+    },
+    {
+      "ts": "2026-09-25T18:30:38Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000022",
+      "detail": "",
+      "event_id": "EVT-000193"
+    },
+    {
+      "ts": "2026-09-26T17:21:38Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000038",
+      "detail": "",
+      "event_id": "EVT-000194"
+    },
+    {
+      "ts": "2026-09-27T07:54:18Z",
+      "actor": "EMP-003",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000019",
+      "detail": "",
+      "event_id": "EVT-000195"
+    },
+    {
+      "ts": "2026-09-27T12:52:29Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000082",
+      "detail": "",
+      "event_id": "EVT-000196"
+    },
+    {
+      "ts": "2026-09-27T13:48:50Z",
+      "actor": "EMP-004",
+      "action": "invoice_created",
+      "record_id": "ERP-INV-000040",
+      "detail": "",
+      "event_id": "EVT-000197"
+    },
+    {
+      "ts": "2026-09-28T13:26:51Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000080",
+      "detail": "",
+      "event_id": "EVT-000198"
+    },
+    {
+      "ts": "2026-09-30T11:54:18Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000019",
+      "detail": "",
+      "event_id": "EVT-000199"
+    },
+    {
+      "ts": "2026-09-30T11:55:46Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000015",
+      "detail": "",
+      "event_id": "EVT-000200"
+    },
+    {
+      "ts": "2026-09-30T17:00:00Z",
+      "actor": "EMP-001",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000038",
+      "detail": "",
+      "event_id": "EVT-000201"
+    },
+    {
+      "ts": "2026-09-30T17:00:00Z",
+      "actor": "EMP-002",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000040",
+      "detail": "",
+      "event_id": "EVT-000202"
+    },
+    {
+      "ts": "2026-09-30T17:00:00Z",
+      "actor": "EMP-008",
+      "action": "approval_approved",
+      "record_id": "ERP-INV-000082",
+      "detail": "",
+      "event_id": "EVT-000203"
+    }
+  ]
+}

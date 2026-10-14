@@ -1,0 +1,16 @@
+Message-ID: <DOC-EML-009@mail.meridianforge.example>
+X-Dataset-Doc-ID: DOC-EML-009
+Date: Sat, 19 Sep 2026 12:00:00 +0000
+From: Juniper Staffing Solutions <ar@juniperstaffingsolutions.example>
+To: ap@meridianforge.example
+Subject: Onboarding documents and invoice JUN-2609-0121
+Attachments: none
+
+Hello,
+
+We sent our onboarding forms last week. In the meantime please process invoice JUN-2609-0121 (2818.80 USD) and pay it with priority.
+
+Best,
+Juniper Staffing
+
+[SYNTHETIC E-MAIL - FICTIONAL DATA]

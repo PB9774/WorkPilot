@@ -1,0 +1,17 @@
+Message-ID: <DOC-EML-001@mail.meridianforge.example>
+X-Dataset-Doc-ID: DOC-EML-001
+Date: Mon, 14 Sep 2026 09:12:00 +0000
+From: Delta Print & Packaging Co Billing <ar@deltaprintpackagingco.example>
+To: ap@meridianforge.example
+Subject: Invoice DEL-2609-0101 for PO-2026-0029
+Attachments: INV-0101_DEL-2609-0101.pdf
+
+Hello Accounts Payable,
+
+Please find attached invoice DEL-2609-0101 dated 2026-09-14 for purchase order PO-2026-0029.
+Total due: 478.44 USD, payment terms Net 30.
+
+Kind regards,
+Billing team, Delta Print & Packaging Co
+
+[SYNTHETIC E-MAIL - FICTIONAL DATA]

@@ -1,0 +1,61 @@
+expense_id,employee_id,expense_date,category,amount,currency,description,receipt_provided,status,approver_id,decision_date
+EXP-0001,EMP-014,2026-07-27,office,116.89,USD,Office supplies,true,reimbursed,EMP-001,2026-07-31
+EXP-0002,EMP-002,2026-08-28,lodging,419.35,USD,Hotel stay,true,reimbursed,EMP-001,2026-08-31
+EXP-0003,EMP-014,2026-07-10,lodging,632.10,USD,Hotel stay,true,submitted,,
+EXP-0004,EMP-021,2026-09-05,office,141.10,USD,Office supplies,true,reimbursed,EMP-001,2026-09-08
+EXP-0005,EMP-019,2026-07-30,office,164.36,GBP,Office supplies,true,approved,EMP-021,2026-08-02
+EXP-0006,EMP-012,2026-07-31,office,102.07,USD,Office supplies,true,reimbursed,EMP-011,2026-08-02
+EXP-0007,EMP-005,2026-08-26,office,49.15,USD,Office supplies,true,approved,EMP-005,2026-08-29
+EXP-0008,EMP-002,2026-09-17,training,2228.36,USD,Training course fee,true,reimbursed,EMP-001,2026-09-21
+EXP-0009,EMP-019,2026-09-08,software,359.23,USD,Software subscription,true,submitted,,
+EXP-0010,EMP-004,2026-08-18,meals,57.12,USD,Client meal,true,submitted,,
+EXP-0011,EMP-006,2026-07-21,training,1692.51,USD,Training course fee,true,rejected,EMP-005,2026-07-22
+EXP-0012,EMP-003,2026-08-03,lodging,488.39,USD,Hotel stay,false,approved,EMP-002,2026-08-07
+EXP-0013,EMP-007,2026-08-17,software,474.72,USD,Software subscription,true,reimbursed,EMP-006,2026-08-20
+EXP-0014,EMP-012,2026-07-23,software,263.83,USD,Software subscription,true,approved,EMP-011,2026-07-28
+EXP-0015,EMP-002,2026-07-27,training,617.45,USD,Training course fee,true,submitted,,
+EXP-0016,EMP-013,2026-07-05,training,3007.25,USD,Training course fee,true,approved,EMP-011,2026-07-10
+EXP-0017,EMP-005,2026-07-23,office,183.53,EUR,Office supplies,true,approved,EMP-001,2026-07-25
+EXP-0018,EMP-016,2026-08-28,travel,217.31,GBP,Travel expense,true,reimbursed,EMP-001,2026-09-01
+EXP-0019,EMP-019,2026-07-27,software,501.90,USD,Software subscription,true,approved,EMP-021,2026-07-31
+EXP-0020,EMP-019,2026-08-14,lodging,504.13,GBP,Hotel stay,true,approved,EMP-021,2026-08-19
+EXP-0021,EMP-001,2026-07-19,meals,64.76,USD,Client meal,true,submitted,,
+EXP-0022,EMP-021,2026-08-29,travel,551.96,USD,Travel expense,true,reimbursed,EMP-001,2026-09-04
+EXP-0023,EMP-010,2026-08-21,software,554.54,USD,Software subscription,true,approved,EMP-009,2026-08-26
+EXP-0024,EMP-005,2026-08-06,software,395.76,USD,Software subscription,true,approved,EMP-001,2026-08-10
+EXP-0025,EMP-007,2026-09-01,meals,65.22,EUR,Client meal,true,reimbursed,EMP-006,2026-09-04
+EXP-0026,EMP-018,2026-07-17,office,36.20,GBP,Office supplies,true,approved,EMP-017,2026-07-21
+EXP-0027,EMP-013,2026-07-28,lodging,501.66,EUR,Hotel stay,true,reimbursed,EMP-012,2026-08-02
+EXP-0028,EMP-004,2026-09-04,office,29.39,USD,Office supplies,true,approved,EMP-002,2026-09-06
+EXP-0029,EMP-001,2026-07-07,lodging,422.13,USD,Hotel stay,true,approved,,2026-07-13
+EXP-0030,EMP-019,2026-08-14,training,2132.13,USD,Training course fee,false,reimbursed,EMP-021,2026-08-17
+EXP-0031,EMP-012,2026-08-10,travel,1232.85,USD,Travel expense,true,submitted,,
+EXP-0032,EMP-018,2026-08-05,training,1713.60,USD,Training course fee,true,submitted,,
+EXP-0033,EMP-020,2026-07-23,meals,36.05,USD,Client meal,true,rejected,EMP-011,2026-07-27
+EXP-0034,EMP-008,2026-07-01,office,70.57,USD,Office supplies,true,approved,EMP-001,2026-07-05
+EXP-0035,EMP-012,2026-07-27,travel,1372.23,USD,Travel expense,true,reimbursed,EMP-011,2026-07-29
+EXP-0036,EMP-001,2026-09-14,travel,1066.39,USD,Travel expense,true,submitted,,
+EXP-0037,EMP-017,2026-09-12,training,2455.44,USD,Training course fee,true,approved,EMP-016,2026-09-18
+EXP-0038,EMP-005,2026-08-15,office,138.07,USD,Office supplies,true,approved,EMP-001,2026-08-16
+EXP-0039,EMP-005,2026-07-09,travel,508.24,USD,Travel expense,true,approved,EMP-001,2026-07-11
+EXP-0040,EMP-012,2026-07-07,training,827.53,USD,Training course fee,true,approved,EMP-011,2026-07-10
+EXP-0041,EMP-005,2026-09-20,lodging,752.15,USD,Hotel stay,true,approved,EMP-005,2026-09-22
+EXP-0042,EMP-017,2026-07-09,lodging,541.25,USD,Hotel stay,true,submitted,,
+EXP-0043,EMP-012,2026-09-20,office,73.68,USD,Office supplies,true,reimbursed,EMP-011,2026-09-26
+EXP-0044,EMP-007,2026-09-09,software,112.97,EUR,Software subscription,true,approved,EMP-006,2026-09-11
+EXP-0045,EMP-014,2026-08-12,lodging,806.44,USD,Hotel stay,true,approved,EMP-001,2026-08-17
+EXP-0046,EMP-003,2026-07-12,training,1388.75,USD,Training course fee,true,reimbursed,EMP-002,2026-07-16
+EXP-0047,EMP-006,2026-09-16,training,417.39,USD,Training course fee,false,submitted,,
+EXP-0048,EMP-016,2026-07-21,training,2974.76,USD,Training course fee,true,reimbursed,EMP-001,2026-07-22
+EXP-0049,EMP-010,2026-07-23,office,152.95,USD,Office supplies,true,approved,EMP-009,2026-07-27
+EXP-0050,EMP-013,2026-07-06,software,399.43,GBP,Software subscription,true,rejected,EMP-012,2026-07-11
+EXP-0051,EMP-004,2026-07-24,travel,1371.04,USD,Travel expense,true,submitted,,
+EXP-0052,EMP-010,2026-08-26,office,92.56,USD,Office supplies,true,approved,EMP-009,2026-08-27
+EXP-0053,EMP-003,2026-07-09,meals,74.65,USD,Client meal,true,reimbursed,EMP-002,2026-07-15
+EXP-0054,EMP-005,2026-07-10,office,35.52,USD,Office supplies,true,approved,EMP-001,2026-07-15
+EXP-0055,EMP-004,2026-09-12,lodging,544.48,USD,Hotel stay,false,approved,EMP-002,2026-09-16
+EXP-0056,EMP-012,2026-07-24,office,129.00,USD,Office supplies,true,reimbursed,EMP-011,2026-07-26
+EXP-0057,EMP-008,2026-09-21,training,1218.72,EUR,Training course fee,true,approved,EMP-001,2026-09-26
+EXP-0058,EMP-005,2026-09-21,office,56.75,USD,Office supplies,true,approved,EMP-001,2026-09-23
+EXP-0059,EMP-005,2026-08-02,meals,52.16,EUR,Client meal,true,approved,EMP-001,2026-08-07
+EXP-0060,EMP-001,2026-08-30,meals,64.41,USD,Client meal,true,reimbursed,,2026-09-02

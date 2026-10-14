@@ -1,0 +1,25 @@
+Meridian Forge Corp (SYNTHETIC COMPANY)
+PURCHASE ORDER
+
+PO Number:      PO-2026-0038
+PO Date:        10/08/2026
+Status:         CANCELLED
+Department:     DEP-006 (IT)
+Requester:      Mia Johansson (EMP-018)
+
+Vendor:         Lumen Telecom Services (VND-015)
+Vendor address: 200 Bay Centre, Toronto, ON M5J 2T3, CA (FICTIONAL)
+Currency:       CAD
+Payment Terms:  Net 30
+
+Description                             Qty       Unit Price            Amount
+------------------------------------------------------------------------------
+Business internet 1 Gbps (monthly)        3     CAD 1,180.00      CAD 3,540.00
+------------------------------------------------------------------------------
+                                                   Subtotal:      CAD 3,540.00
+                                                  Tax (13%):        CAD 460.20
+                                            APPROVED BUDGET:      CAD 4,000.20
+
+Invoices must quote the PO number. Total invoiced must not exceed the approved budget.
+
+*** SYNTHETIC DOCUMENT - FICTIONAL DATA - DOC-PO-0038 ***

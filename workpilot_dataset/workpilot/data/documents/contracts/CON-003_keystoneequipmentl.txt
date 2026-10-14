@@ -1,0 +1,13 @@
+EQUIPMENT LEASE AGREEMENT
+Contract ID: CON-003
+Effective date: 2026-01-01
+Parties: Meridian Forge Corp (SYNTHETIC) and Keystone Equipment Leasing (VND-014)
+Vendor tax ID (SYNTHETIC): SYN-EIN-00000014
+
+1. Scope: monthly lease of forklifts, vans and pallet jacks.
+2. Payment terms: Net 45 days from invoice date.
+3. Monthly rates (USD): Forklift 1,350.00; Delivery van 890.00; Pallet jack 110.00.
+4. Late payment interest: 1% per month on overdue amounts.
+5. Termination: 90 days written notice, equipment returned within 14 days.
+
+[SYNTHETIC CONTRACT - FICTIONAL DATA - NOT LEGALLY BINDING]

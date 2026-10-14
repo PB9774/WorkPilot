@@ -1,0 +1,16 @@
+Message-ID: <DOC-EML-010@mail.meridianforge.example>
+X-Dataset-Doc-ID: DOC-EML-010
+Date: Mon, 14 Sep 2026 13:45:00 +0000
+From: Granite Peak Security LLC Billing <ar@granitepeaksecurityllc.example>
+To: ap@meridianforge.example
+Subject: Invoice GRA-2609-0108 - additional guard shifts
+Attachments: none
+
+Hello,
+
+Invoice GRA-2609-0108 for PO-2026-0036 includes 6 additional guard shifts requested verbally by the site team. Please increase the PO and approve the invoice.
+
+Regards,
+Granite Peak billing
+
+[SYNTHETIC E-MAIL - FICTIONAL DATA]

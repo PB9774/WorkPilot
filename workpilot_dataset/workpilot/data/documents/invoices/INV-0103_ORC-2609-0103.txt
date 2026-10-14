@@ -1,0 +1,31 @@
+Orchid Marketing Studio
+41 Foundry Mews,  London, EC2A 3QR, GB (FICTIONAL)
+Tel: +44 20 7946 0018   Email: ar@orchidmarketingstudio.example
+Tax ID (SYNTHETIC): SYN-VAT-00000018
+
+                              INVOICE
+
+Invoice No:     ORC-2609-0103
+Invoice Date:   14 September 2026
+Due Date:       14 October 2026
+PO Reference:   PO-2026-0031
+Currency:       GBP
+Payment Terms:  Net 30
+
+Bill To:
+  Meridian Forge Corp (SYNTHETIC COMPANY)
+  Accounts Payable, 500 Foundry Lane, Northfield, MN 55057 (FICTIONAL)
+  ap@meridianforge.example
+
+Description                             Qty       Unit Price            Amount
+------------------------------------------------------------------------------
+Content writing (per article)             6          £210.00         £1,260.00
+Brand photography day                     1        £1,450.00         £1,450.00
+------------------------------------------------------------------------------
+                                                   Subtotal:         £2,710.00
+                                                  Tax (20%):           £542.00
+                                                  TOTAL DUE:         £3,252.00
+
+Remittance: via vendor portal (no banking details on this synthetic document).
+
+*** SYNTHETIC DOCUMENT - FICTIONAL DATA - DOC-INV-0103 ***

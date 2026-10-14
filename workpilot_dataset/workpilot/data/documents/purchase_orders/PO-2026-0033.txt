@@ -1,0 +1,26 @@
+Meridian Forge Corp (SYNTHETIC COMPANY)
+PURCHASE ORDER
+
+PO Number:      PO-2026-0033
+PO Date:        09/01/2026
+Status:         APPROVED
+Department:     DEP-003 (Operations)
+Requester:      Tomas Novak (EMP-010)
+
+Vendor:         Evergreen Facilities Services (VND-008)
+Vendor address: 55 Birch Avenue, Calgary, AB T2P 1J9, CA (FICTIONAL)
+Currency:       CAD
+Payment Terms:  Net 30
+
+Description                             Qty       Unit Price            Amount
+------------------------------------------------------------------------------
+Facility maintenance visit                3       CAD 410.00      CAD 1,230.00
+HVAC filter replacement                   8       CAD 128.00      CAD 1,024.00
+------------------------------------------------------------------------------
+                                                   Subtotal:      CAD 2,254.00
+                                                  Tax (13%):        CAD 293.02
+                                            APPROVED BUDGET:      CAD 2,547.02
+
+Invoices must quote the PO number. Total invoiced must not exceed the approved budget.
+
+*** SYNTHETIC DOCUMENT - FICTIONAL DATA - DOC-PO-0033 ***

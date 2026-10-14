@@ -1,0 +1,16 @@
+Message-ID: <DOC-EML-003@mail.meridianforge.example>
+X-Dataset-Doc-ID: DOC-EML-003
+Date: Thu, 17 Sep 2026 10:05:00 +0000
+From: Omar Haddad <omar.haddad@meridianforge.example>
+To: ap@meridianforge.example
+Subject: Dispute: quantities on invoice KEY-2606-0010
+Attachments: none
+
+Hi AP,
+
+The quantities billed on KEY-2606-0010 (Keystone Equipment Leasing, 3775.68 USD) do not match what we received.
+Please keep the invoice on hold until the vendor sends a credit note.
+
+Omar
+
+[SYNTHETIC E-MAIL - FICTIONAL DATA]

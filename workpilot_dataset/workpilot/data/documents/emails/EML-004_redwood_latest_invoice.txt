@@ -1,0 +1,17 @@
+Message-ID: <DOC-EML-004@mail.meridianforge.example>
+X-Dataset-Doc-ID: DOC-EML-004
+Date: Tue, 22 Sep 2026 08:30:00 +0000
+From: Redwood IT Hardware Inc Billing <ar@redwoodithardwareinc.example>
+To: ap@meridianforge.example
+Subject: New invoice RED-2609-0107 - monitors and docking stations
+Attachments: INV-0107_RED-2609-0107.pdf
+
+Hello,
+
+Attached is invoice RED-2609-0107 dated 2026-09-22 for PO-2026-0035: 12 x 27in monitor and 12 x docking station.
+Total 6804.00 USD. Goods were delivered on 18 September. Please let us know if you need a delivery note.
+
+Regards,
+Redwood billing
+
+[SYNTHETIC E-MAIL - FICTIONAL DATA]

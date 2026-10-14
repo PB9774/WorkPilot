@@ -1,0 +1,29 @@
+Tandem Training Institute
+120 College Row,  Madison, WI 53703, US (FICTIONAL)
+Tel: +1-555-0123   Email: ar@tandemtraininginstitute.example
+Tax ID (SYNTHETIC): SYN-EIN-00000023
+
+                              INVOICE
+
+Invoice No:     TAN-2609-0040
+Invoice Date:   2026-09-23
+Due Date:       2026-10-23
+Currency:       USD
+Payment Terms:  Net 30
+
+Bill To:
+  Meridian Forge Corp (SYNTHETIC COMPANY)
+  Accounts Payable, 500 Foundry Lane, Northfield, MN 55057 (FICTIONAL)
+  ap@meridianforge.example
+
+Description                             Qty       Unit Price            Amount
+------------------------------------------------------------------------------
+Safety certification course               1          $220.80           $220.80
+------------------------------------------------------------------------------
+                                                   Subtotal:           $220.80
+                                                   Tax (8%):            $17.66
+                                                  TOTAL DUE:           $238.46
+
+Remittance: via vendor portal (no banking details on this synthetic document).
+
+*** SYNTHETIC DOCUMENT - FICTIONAL DATA - DOC-INV-0040 ***

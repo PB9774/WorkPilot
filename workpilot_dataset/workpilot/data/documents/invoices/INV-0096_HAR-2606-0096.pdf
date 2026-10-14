@@ -1,0 +1,106 @@
+%PDF-1.3
+%“Œ‹ž ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Contents 8 0 R /MediaBox [ 0 0 612 792 ] /Parent 7 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/PageMode /UseNone /Pages 7 0 R /Type /Catalog
+>>
+endobj
+6 0 obj
+<<
+/Author (anonymous) /CreationDate (D:20000101000000+00'00') /Creator (anonymous) /Keywords () /ModDate (D:20000101000000+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (unspecified) /Title (Invoice HAR-2606-0096) /Trapped /False
+>>
+endobj
+7 0 obj
+<<
+/Count 1 /Kids [ 4 0 R ] /Type /Pages
+>>
+endobj
+8 0 obj
+<<
+/Length 2180
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+BT /F2 9 Tf 10.8 TL ET
+BT 1 0 0 1 46 752 Tm (Harborline Travel Group) Tj T* ET
+BT 1 0 0 1 46 741 Tm (3 Dockside Row,  Bristol, BS1 5TY, GB \(FICTIONAL\)) Tj T* ET
+BT 1 0 0 1 46 730 Tm (Tel: +44 20 7946 0011   Email: ar@harborlinetravelgroup.example) Tj T* ET
+BT 1 0 0 1 46 719 Tm (Tax ID \(SYNTHETIC\): SYN-VAT-00000011) Tj T* ET
+BT 1 0 0 1 46 708 Tm  T* ET
+BT 1 0 0 1 46 697 Tm (                              INVOICE) Tj T* ET
+BT 1 0 0 1 46 686 Tm  T* ET
+BT 1 0 0 1 46 675 Tm (Invoice No:     HAR-2606-0096) Tj T* ET
+BT 1 0 0 1 46 664 Tm (Invoice Date:   06 June 2026) Tj T* ET
+BT 1 0 0 1 46 653 Tm (Due Date:       06 July 2026) Tj T* ET
+BT 1 0 0 1 46 642 Tm (Currency:       GBP) Tj T* ET
+BT 1 0 0 1 46 631 Tm (Payment Terms:  Net 30) Tj T* ET
+BT 1 0 0 1 46 620 Tm  T* ET
+BT 1 0 0 1 46 609 Tm (Bill To:) Tj T* ET
+BT 1 0 0 1 46 598 Tm (  Meridian Forge Corp \(SYNTHETIC COMPANY\)) Tj T* ET
+BT 1 0 0 1 46 587 Tm (  Accounts Payable, 500 Foundry Lane, Northfield, MN 55057 \(FICTIONAL\)) Tj T* ET
+BT 1 0 0 1 46 576 Tm (  ap@meridianforge.example) Tj T* ET
+BT 1 0 0 1 46 565 Tm  T* ET
+BT 1 0 0 1 46 554 Tm (Description                             Qty       Unit Price            Amount) Tj T* ET
+BT 1 0 0 1 46 543 Tm (------------------------------------------------------------------------------) Tj T* ET
+BT 1 0 0 1 46 532 Tm (Ground transport package                  2           \24373.31           \243146.62) Tj T* ET
+BT 1 0 0 1 46 521 Tm (------------------------------------------------------------------------------) Tj T* ET
+BT 1 0 0 1 46 510 Tm (                                                   Subtotal:           \243146.62) Tj T* ET
+BT 1 0 0 1 46 499 Tm (                                                  Tax \(20%\):            \24329.32) Tj T* ET
+BT 1 0 0 1 46 488 Tm (                                                  TOTAL DUE:           \243175.94) Tj T* ET
+BT 1 0 0 1 46 477 Tm  T* ET
+BT 1 0 0 1 46 466 Tm (Remittance: via vendor portal \(no banking details on this synthetic document\).) Tj T* ET
+BT 1 0 0 1 46 455 Tm  T* ET
+BT 1 0 0 1 46 444 Tm (*** SYNTHETIC DOCUMENT - FICTIONAL DATA - DOC-INV-0096 ***) Tj T* ET
+ 
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000314 00000 n 
+0000000507 00000 n 
+0000000575 00000 n 
+0000000849 00000 n 
+0000000908 00000 n 
+trailer
+<<
+/ID 
+[<d7fd182cac10adf4ad52ea9239ae68a2><d7fd182cac10adf4ad52ea9239ae68a2>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 6 0 R
+/Root 5 0 R
+/Size 9
+>>
+startxref
+3139
+%%EOF

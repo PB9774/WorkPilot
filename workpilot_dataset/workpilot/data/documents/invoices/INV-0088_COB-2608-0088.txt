@@ -1,0 +1,29 @@
+Cobalt Logistics GmbH
+Hafenstrasse 14,  Hamburg, 20457, DE (FICTIONAL)
+Tel: +49 30 5550105   Email: ar@cobaltlogisticsgmbh.example
+Tax ID (SYNTHETIC): SYN-VAT-00000005
+
+                              INVOICE
+
+Invoice No:     COB-2608-0088
+Invoice Date:   2026-08-25
+Due Date:       2026-09-24
+Currency:       EUR
+Payment Terms:  Net 30
+
+Bill To:
+  Meridian Forge Corp (SYNTHETIC COMPANY)
+  Accounts Payable, 500 Foundry Lane, Northfield, MN 55057 (FICTIONAL)
+  ap@meridianforge.example
+
+Description                             Qty       Unit Price            Amount
+------------------------------------------------------------------------------
+Warehouse storage (per pallet/month)      5        29,91 EUR        149,55 EUR
+------------------------------------------------------------------------------
+                                                   Subtotal:        149,55 EUR
+                                                  Tax (19%):         28,41 EUR
+                                                  TOTAL DUE:        177,96 EUR
+
+Remittance: via vendor portal (no banking details on this synthetic document).
+
+*** SYNTHETIC DOCUMENT - FICTIONAL DATA - DOC-INV-0088 ***

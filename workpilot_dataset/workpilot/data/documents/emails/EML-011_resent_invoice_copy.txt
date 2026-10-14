@@ -1,0 +1,16 @@
+Message-ID: <DOC-EML-011@mail.meridianforge.example>
+X-Dataset-Doc-ID: DOC-EML-011
+Date: Tue, 15 Sep 2026 09:00:00 +0000
+From: Harborline Travel Group Billing <ar@harborlinetravelgroup.example>
+To: ap@meridianforge.example
+Subject: Resending invoice HAR-2609-0113
+Attachments: INV-0114_HAR-2609-0113.pdf
+
+Hi,
+
+Resending invoice HAR-2609-0113 (5436.00 GBP) in case the first copy did not arrive.
+
+Thanks,
+Harborline billing
+
+[SYNTHETIC E-MAIL - FICTIONAL DATA]

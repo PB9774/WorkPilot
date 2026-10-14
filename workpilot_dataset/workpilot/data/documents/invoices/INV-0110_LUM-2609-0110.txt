@@ -1,0 +1,30 @@
+Lumen Telecom Services
+200 Bay Centre,  Toronto, ON M5J 2T3, CA (FICTIONAL)
+Tel: +1-555-0115   Email: ar@lumentelecomservices.example
+Tax ID (SYNTHETIC): SYN-BN-00000015
+
+                              INVOICE
+
+Invoice No:     LUM-2609-0110
+Invoice Date:   11-Sep-2026
+Due Date:       11-Oct-2026
+PO Reference:   PO-2026-0038
+Currency:       CAD
+Payment Terms:  Net 30
+
+Bill To:
+  Meridian Forge Corp (SYNTHETIC COMPANY)
+  Accounts Payable, 500 Foundry Lane, Northfield, MN 55057 (FICTIONAL)
+  ap@meridianforge.example
+
+Description                             Qty       Unit Price            Amount
+------------------------------------------------------------------------------
+Business internet 1 Gbps (monthly)        3     CAD 1,180.00      CAD 3,540.00
+------------------------------------------------------------------------------
+                                                   Subtotal:      CAD 3,540.00
+                                                  Tax (13%):        CAD 460.20
+                                                  TOTAL DUE:      CAD 4,000.20
+
+Remittance: via vendor portal (no banking details on this synthetic document).
+
+*** SYNTHETIC DOCUMENT - FICTIONAL DATA - DOC-INV-0110 ***

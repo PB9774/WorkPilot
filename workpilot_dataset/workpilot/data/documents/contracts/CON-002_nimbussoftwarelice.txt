@@ -1,0 +1,12 @@
+SOFTWARE LICENSING AGREEMENT
+Contract ID: CON-002
+Effective date: 2026-01-01
+Parties: Meridian Forge Corp (SYNTHETIC) and Nimbus Software Licensing GmbH (VND-017)
+Vendor tax ID (SYNTHETIC): SYN-VAT-00000017
+
+1. Scope: annual software licences.
+2. Payment terms: Net 45 days from invoice date.
+3. Price schedule (EUR, excl. VAT): Design software licence 480.00 per seat; Security suite licence 90.00 per seat.
+4. Termination: 30 days written notice before renewal.
+
+[SYNTHETIC CONTRACT - FICTIONAL DATA - NOT LEGALLY BINDING]

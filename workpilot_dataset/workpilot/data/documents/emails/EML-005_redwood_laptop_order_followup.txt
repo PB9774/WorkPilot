@@ -1,0 +1,16 @@
+Message-ID: <DOC-EML-005@mail.meridianforge.example>
+X-Dataset-Doc-ID: DOC-EML-005
+Date: Fri, 18 Sep 2026 16:20:00 +0000
+From: Redwood IT Hardware Inc Accounts <ar@redwoodithardwareinc.example>
+To: ap@meridianforge.example
+Subject: Follow-up: invoice RED-2609-0106 awaiting approval
+Attachments: none
+
+Hi,
+
+We delivered the 40 laptops and 40 docking stations on PO-2026-0034. Invoice RED-2609-0106 (67608.00 USD) was submitted on 10 September and still shows as pending. Could you let us know the expected approval date?
+
+Thanks,
+Redwood accounts
+
+[SYNTHETIC E-MAIL - FICTIONAL DATA]

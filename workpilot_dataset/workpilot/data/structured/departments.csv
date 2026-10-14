@@ -1,0 +1,8 @@
+department_id,name,cost_center,head_employee_id,annual_budget_usd
+DEP-001,Finance,CC-1000,EMP-001,1800000
+DEP-002,Engineering,CC-2000,EMP-005,4200000
+DEP-003,Operations,CC-3000,EMP-008,3100000
+DEP-004,Marketing,CC-4000,EMP-011,1500000
+DEP-005,Human Resources,CC-5000,EMP-014,900000
+DEP-006,IT,CC-6000,EMP-016,2600000
+DEP-007,Procurement,CC-7000,EMP-021,700000

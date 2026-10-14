@@ -1,0 +1,15 @@
+Message-ID: <DOC-EML-008@mail.meridianforge.example>
+X-Dataset-Doc-ID: DOC-EML-008
+Date: Mon, 28 Sep 2026 15:02:00 +0000
+From: Lena Fischer <lena.fischer@meridianforge.example>
+To: sofia.marlowe@meridianforge.example
+Subject: OK to pay NIM-2609-0005
+Attachments: none
+
+Sofia,
+
+I approve invoice NIM-2609-0005 from Nimbus Software Licensing GmbH (5209.24 EUR). Please go ahead and pay it today.
+
+Lena
+
+[SYNTHETIC E-MAIL - FICTIONAL DATA]

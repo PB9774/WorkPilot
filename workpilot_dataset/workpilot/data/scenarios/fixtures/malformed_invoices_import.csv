@@ -1,0 +1,8 @@
+invoice_id,invoice_number,vendor_id,vendor_name,invoice_date,due_date,currency,subtotal,tax_amount,total_amount,po_number,status,document_filename,department_id,payment_method,created_at
+INV-9001,TST-0001,VND-007,"Delta Print & Packaging Co",2026-09-01,2026-10-01,USD,100.00,8.00,108.00,,received,,DEP-004,ach,2026-09-01T10:00:00Z
+INV-9002,TST-0002,VND-008,Evergreen Facilities Services,2026-09-02,2026-10-02,CAD,200.00,26.00,226.00,,received,,DEP-003,eft,2026-09-02T10:00:00Z
+INV-9003,TST-0003,VND-010,Granite Peak Security LLC,2026-09-03,2026-10-03,USD,300.00,24.00,324.00,,received,,DEP-003,ach,2026-09-03T10:00:00Z
+INV-9004,TST-0004,VND-007,Delta Print & Packaging Co,2026-09-04,2026-10-04,USD,100.00,8.00
+INV-9005,TST-0005,VND-008,Evergreen Facilities Services,2026-09-05,2026-10-05,CAD,two hundred,26.00,226.00,,received,,DEP-003,eft,2026-09-05T10:00:00Z
+INV-9006,TST-0006,VND-010,Granite Peak Security LLC,2026-13-45,2026-10-06,USD,300.00,24.00,324.00,,received,,DEP-003,ach,2026-09-06T10:00:00Z
+INV-9007,TST-0007,VND-010,Granite Peak Security LLC,2026-09-07,2026-10-07,USD,1,200.00,24.00,1224.00,,received,,DEP-003,ach,2026-09-07T10:00:00Z

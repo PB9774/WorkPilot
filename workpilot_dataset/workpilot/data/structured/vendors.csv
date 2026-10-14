@@ -1,0 +1,27 @@
+vendor_id,name,contact_email,contact_phone,country,billing_address,currency,status,payment_terms,tax_id,tax_rate,onboarded_date
+VND-001,Apex Office Supplies Ltd,ar@apexofficesuppliesltd.example,+1-555-0101,US,"1200 Commerce Way, Columbus, OH 43004, US (FICTIONAL)",USD,active,Net 30,SYN-EIN-00000001,0.08,2024-04-11
+VND-002,Apex Office Supply Ltd.,ar@apexofficesupplyltd.example,+1-555-0102,US,"88 Harbor Street, Columbus, OH 43215, US (FICTIONAL)",USD,pending,Net 30,SYN-EIN-00000002,0.08,2024-05-22
+VND-003,Brightwave Consulting LLC,ar@brightwaveconsultingllc.example,+1-555-0103,US,"410 Market Square, Austin, TX 78701, US (FICTIONAL)",USD,active,Net 30,SYN-EIN-00000003,0.08,2024-07-02
+VND-004,Bright Wave Consulting Inc,ar@brightwaveconsultinginc.example,+1-555-0104,US,"77 Lakeview Drive, Denver, CO 80202, US (FICTIONAL)",USD,active,Net 45,SYN-EIN-00000004,0.08,2024-08-12
+VND-005,Cobalt Logistics GmbH,ar@cobaltlogisticsgmbh.example,+49 30 5550105,DE,"Hafenstrasse 14, Hamburg, 20457, DE (FICTIONAL)",EUR,active,Net 30,SYN-VAT-00000005,0.19,2024-09-22
+VND-006,Cobalt Logistik GmbH,ar@cobaltlogistikgmbh.example,+49 30 5550106,DE,"Industriering 9, Bremen, 28195, DE (FICTIONAL)",EUR,suspended,Net 30,SYN-VAT-00000006,0.19,2024-11-02
+VND-007,Delta Print & Packaging Co,ar@deltaprintpackagingco.example,+1-555-0107,US,"301 Mill Road, Dayton, OH 45402, US (FICTIONAL)",USD,active,Net 30,SYN-EIN-00000007,0.08,2024-12-13
+VND-008,Evergreen Facilities Services,ar@evergreenfacilitiesservices.example,+1-555-0108,CA,"55 Birch Avenue, Calgary, AB T2P 1J9, CA (FICTIONAL)",CAD,active,Net 30,SYN-BN-00000008,0.13,2025-01-23
+VND-009,Fenwick Cloud Hosting Ltd,ar@fenwickcloudhostingltd.example,+44 20 7946 0009,GB,"12 Canal Quay, Manchester, M1 4BT, GB (FICTIONAL)",GBP,active,Net 30,SYN-VAT-00000009,0.20,2025-03-05
+VND-010,Granite Peak Security LLC,ar@granitepeaksecurityllc.example,+1-555-0110,US,"9 Summit Park, Boise, ID 83702, US (FICTIONAL)",USD,active,Net 30,SYN-EIN-00000010,0.08,2025-04-15
+VND-011,Harborline Travel Group,ar@harborlinetravelgroup.example,+44 20 7946 0011,GB,"3 Dockside Row, Bristol, BS1 5TY, GB (FICTIONAL)",GBP,active,Net 30,SYN-VAT-00000011,0.20,2025-05-26
+VND-012,Indigo Analytics Pvt Ltd,ar@indigoanalyticspvtltd.example,+91 99999 00012,IN,"Plot 22, Tech Park Road, Pune, 411057, IN (FICTIONAL)",INR,active,Net 45,SYN-GSTIN-00000012,0.18,2025-07-06
+VND-013,Juniper Staffing Solutions,ar@juniperstaffingsolutions.example,+1-555-0113,US,"640 Alder Street, Portland, OR 97204, US (FICTIONAL)",USD,pending,Net 30,SYN-EIN-00000013,0.08,2025-08-16
+VND-014,Keystone Equipment Leasing,ar@keystoneequipmentleasing.example,+1-555-0114,US,"18 Quarry Lane, Pittsburgh, PA 15222, US (FICTIONAL)",USD,active,Net 45,SYN-EIN-00000014,0.08,2025-09-26
+VND-015,Lumen Telecom Services,ar@lumentelecomservices.example,+1-555-0115,CA,"200 Bay Centre, Toronto, ON M5J 2T3, CA (FICTIONAL)",CAD,active,Net 30,SYN-BN-00000015,0.13,2025-11-06
+VND-016,Maple & Pine Catering,ar@maplepinecatering.example,+1-555-0116,CA,"14 Orchard Close, Ottawa, ON K1P 5G4, CA (FICTIONAL)",CAD,active,Net 15,SYN-BN-00000016,0.13,2025-12-17
+VND-017,Nimbus Software Licensing GmbH,ar@nimbussoftwarelicensinggmbh.example,+49 30 5550117,DE,"Lindenallee 7, Munich, 80331, DE (FICTIONAL)",EUR,active,Net 30,SYN-VAT-00000017,0.19,2026-01-27
+VND-018,Orchid Marketing Studio,ar@orchidmarketingstudio.example,+44 20 7946 0018,GB,"41 Foundry Mews, London, EC2A 3QR, GB (FICTIONAL)",GBP,active,Net 30,SYN-VAT-00000018,0.20,2026-03-09
+VND-019,Pinnacle Legal Advisors LLP,ar@pinnaclelegaladvisorsllp.example,+44 20 7946 0019,GB,"8 Chancery Walk, Leeds, LS1 4AP, GB (FICTIONAL)",GBP,active,Net 30,SYN-VAT-00000019,0.20,2026-04-19
+VND-020,Quartz Maintenance Co,ar@quartzmaintenanceco.example,+1-555-0120,US,"77 Foundry Park, Toledo, OH 43604, US (FICTIONAL)",USD,suspended,Net 30,SYN-EIN-00000020,0.08,2026-05-30
+VND-021,Redwood IT Hardware Inc,ar@redwoodithardwareinc.example,+1-555-0121,US,"5500 Cedar Parkway, Raleigh, NC 27601, US (FICTIONAL)",USD,active,Net 30,SYN-EIN-00000021,0.08,2026-07-10
+VND-022,Sterling Courier Services Ltd,ar@sterlingcourierservicesltd.example,+44 20 7946 0022,GB,"26 Wharf Road, Glasgow, G1 2AB, GB (FICTIONAL)",GBP,active,Net 15,SYN-VAT-00000022,0.20,2026-08-20
+VND-023,Tandem Training Institute,ar@tandemtraininginstitute.example,+1-555-0123,US,"120 College Row, Madison, WI 53703, US (FICTIONAL)",USD,pending,Net 30,SYN-EIN-00000023,0.08,2026-09-30
+VND-024,Umbra Cleaning Services,ar@umbracleaningservices.example,+1-555-0124,US,"47 Birchwood Court, Tampa, FL 33602, US (FICTIONAL)",USD,active,Net 30,SYN-EIN-00000024,0.08,2026-11-10
+VND-025,Vantage Data Centers India Pvt Ltd,ar@vantagedatacentersindiapvtltd.example,+91 99999 00025,IN,"Sector 62, Infocity, Noida, 201309, IN (FICTIONAL)",INR,suspended,Net 60,SYN-GSTIN-00000025,0.18,2026-12-21
+VND-026,Willow Creek Printing,ar@willowcreekprinting.example,+1-555-0126,CA,"9 Mill Pond Road, Halifax, NS B3J 1S9, CA (FICTIONAL)",CAD,pending,Net 30,SYN-BN-00000026,0.13,2027-01-31

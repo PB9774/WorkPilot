@@ -1,0 +1,17 @@
+Message-ID: <DOC-EML-002@mail.meridianforge.example>
+X-Dataset-Doc-ID: DOC-EML-002
+Date: Wed, 23 Sep 2026 14:40:00 +0000
+From: Brightwave Consulting LLC Collections <ar@brightwaveconsultingllc.example>
+To: ap@meridianforge.example
+Subject: Reminder: invoice BRI-2608-0003 is past due
+Attachments: none
+
+Dear team,
+
+Our records show invoice BRI-2608-0003 (3351.94 USD, due 2026-09-16) is still unpaid.
+Please confirm the payment date.
+
+Thank you,
+Accounts Receivable
+
+[SYNTHETIC E-MAIL - FICTIONAL DATA]

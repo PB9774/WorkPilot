@@ -1,0 +1,32 @@
+[SIMULATED SCAN - OCR OUTPUT - ENGINE CONFIDENCE 0.61 - NOT A REAL SCAN]
+
+Sterling Courier Services Ltd
+26 Wharf Road,  Glasgow, G1 2AB, GB (FICTIONAL)
+Tel: +44 2O 7946 0022   Email: ar@sterlingcourierservicesltd.example
+Tax ID (SYNTHETIC): SYN-VAT-000O0022
+
+                              INVOICE
+
+Invoice No:     STE-2609-0l29
+Invoice Date:   15/09/2026
+Due Date:       30/09/2026
+PO Reference:   PO-2026-0054
+Currency:       GBP
+Payment Terms:  Net 15
+
+Bill To:
+  Meridian Forge Corp (SYNTHETIC COMPANY)
+  Accounts Payable, 5O0 Foundry Lane, Northfield, MN 5SO57 (FICTIONAL)
+  ap@meridianforge.example
+
+Description                             Qty       Unit Price            Amount
+------------------------------------------------------------------------------
+Same-day courier run                     22           £46.0O         £1,0l2.00
+------------------------------------------------------------------------------
+                                                   Subtotal:         £1,O12.0O
+                                                  Tax (20%):           £2O2.40
+                                                  TOTAL DUE:         £1,214.40
+
+Remittance: via vendor portal (no banking details on this synthetic document).
+
+*** SYNTHETIC DOCUMENT - FICTIONAL DATA - DOC-INV-0129 ***

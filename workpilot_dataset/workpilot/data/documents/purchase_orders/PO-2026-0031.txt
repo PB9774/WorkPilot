@@ -1,0 +1,26 @@
+Meridian Forge Corp (SYNTHETIC COMPANY)
+PURCHASE ORDER
+
+PO Number:      PO-2026-0031
+PO Date:        30/08/2026
+Status:         APPROVED
+Department:     DEP-004 (Marketing)
+Requester:      Yuki Sato (EMP-013)
+
+Vendor:         Orchid Marketing Studio (VND-018)
+Vendor address: 41 Foundry Mews, London, EC2A 3QR, GB (FICTIONAL)
+Currency:       GBP
+Payment Terms:  Net 30
+
+Description                             Qty       Unit Price            Amount
+------------------------------------------------------------------------------
+Content writing (per article)             6          £210.00         £1,260.00
+Brand photography day                     1        £1,450.00         £1,450.00
+------------------------------------------------------------------------------
+                                                   Subtotal:         £2,710.00
+                                                  Tax (20%):           £542.00
+                                            APPROVED BUDGET:         £3,252.00
+
+Invoices must quote the PO number. Total invoiced must not exceed the approved budget.
+
+*** SYNTHETIC DOCUMENT - FICTIONAL DATA - DOC-PO-0031 ***

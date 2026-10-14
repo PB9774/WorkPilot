@@ -1,0 +1,13 @@
+CLOUD HOSTING SERVICE AGREEMENT
+Contract ID: CON-005
+Effective date: 2026-01-01
+Parties: Meridian Forge Corp (SYNTHETIC) and Fenwick Cloud Hosting Ltd (VND-009)
+Vendor tax ID (SYNTHETIC): SYN-VAT-00000009
+
+1. Scope: managed hosting, premium support and storage.
+2. Payment terms: Net 30 days from invoice date.
+3. Rates (GBP, excl. VAT): Managed hosting 2,150.00 per month; Premium support 900.00 per month; Storage block 105.00 per TB.
+4. Invoices must quote the purchase order number. 5. Termination: 90 days written notice.
+6. Service credits apply for downtime above 0.1%.
+
+[SYNTHETIC CONTRACT - FICTIONAL DATA - NOT LEGALLY BINDING]

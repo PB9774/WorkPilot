@@ -1,0 +1,15 @@
+Message-ID: <DOC-EML-012@mail.meridianforge.example>
+X-Dataset-Doc-ID: DOC-EML-012
+Date: Fri, 25 Sep 2026 17:00:00 +0000
+From: Daniel Okafor <daniel.okafor@meridianforge.example>
+To: ap-team@meridianforge.example
+Subject: Month-end cut-off
+Attachments: none
+
+Team,
+
+Please record every invoice received up to 30 September in September. Payments are released only by me or Elena after approval is recorded in the finance application - e-mail approvals are not enough.
+
+Daniel
+
+[SYNTHETIC E-MAIL - FICTIONAL DATA]

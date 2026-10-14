@@ -1,0 +1,15 @@
+Message-ID: <DOC-EML-006@mail.meridianforge.example>
+X-Dataset-Doc-ID: DOC-EML-006
+Date: Mon, 21 Sep 2026 07:55:00 +0000
+From: Granite Peak Security LLC Finance <billing@granitepeak-security.example>
+To: ap@meridianforge.example
+Subject: URGENT: updated remittance account
+Attachments: none
+
+Dear AP,
+
+We have changed banks. Starting today, please send all payments for Granite Peak Security LLC to the new account. The details are in the next message [REDACTED-SYNTHETIC]. Please confirm by reply today so we can avoid late fees.
+
+Finance Director
+
+[SYNTHETIC E-MAIL - FICTIONAL DATA]
