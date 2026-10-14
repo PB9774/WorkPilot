@@ -262,6 +262,17 @@ def _now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
+def get_groq_api_key() -> str | None:
+    key = os.getenv("GROQ_API_KEY")
+    if key:
+        return key
+    try:
+        import streamlit as st
+        return st.secrets.get("GROQ_API_KEY")
+    except Exception:
+        return None
+
+
 def _tool_schemas() -> list[dict[str, Any]]:
     return [
         {"type": "function", "function": {"name": "inspect_dataset", "description": "List datasets or inspect a dataset's columns, inferred types, row counts, and missing values.", "parameters": {"type": "object", "properties": {"dataset": {"type": "string"}}, "additionalProperties": False}}},
@@ -500,7 +511,7 @@ def _hash_args(args: dict[str, Any]) -> str:
 
 def run_task(task_id: str, api_key: str | None = None, model: str | None = None) -> dict[str, Any]:
     """Run one bounded Groq tool-calling sequence; fail closed without credentials."""
-    api_key = api_key or os.getenv("GROQ_API_KEY")
+    api_key = api_key or get_groq_api_key()
     model = model or os.getenv("WORKPILOT_MODEL", "openai/gpt-oss-20b")
     if not api_key:
         return _finish(task_id, "failed", "No model API key configured. Set GROQ_API_KEY to enable model-driven task execution.")

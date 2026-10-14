@@ -53,6 +53,15 @@ class WorkPilotCoreTests(unittest.TestCase):
         self.assertIn("[REDACTED_EMAIL]", value)
         self.assertIn("[REDACTED_TAX_ID]", value)
 
+    def test_groq_key_uses_environment_then_streamlit_secret(self):
+        fake_streamlit = types.ModuleType("streamlit")
+        fake_streamlit.secrets = {"GROQ_API_KEY": "cloud-test-key"}
+        with patch.dict(sys.modules, {"streamlit": fake_streamlit}):
+            with patch.dict("os.environ", {}, clear=True):
+                self.assertEqual(core.get_groq_api_key(), "cloud-test-key")
+            with patch.dict("os.environ", {"GROQ_API_KEY": "shell-test-key"}):
+                self.assertEqual(core.get_groq_api_key(), "shell-test-key")
+
     def test_user_csv_import_and_malformed_json(self):
         imported = core.import_upload("regional_sales.csv", b"region,revenue\nNorth,120\nSouth,80\n")
         self.assertTrue(imported["ok"])
